@@ -39,6 +39,7 @@ Lịch trên được chép từ ảnh người học cung cấp, **ảnh không
 - [Cách thêm tài liệu và quản lý Git](HUONG-DAN-DONG-GOP.md)
 - [Quyền sử dụng và nguồn gốc](NGUON-GOC.md)
 - [Kết quả kiểm tra và giới hạn](KIEM-TRA.md)
+- [Tổng hợp link đề UIT cũ, đề ôn và video chữa đề cho 5 môn](DE-THI-UIT-LINKS.md)
 
 ## Chạy các lab có sẵn
 
