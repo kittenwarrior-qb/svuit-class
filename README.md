@@ -33,6 +33,7 @@ Lịch trên được chép từ ảnh người học cung cấp, **ảnh không
 ## Tài liệu dùng chung
 
 - [Kế hoạch học và theo dõi tiến độ](KE-HOACH-HOC.md)
+- [Lộ trình ưu tiên môn dễ vào trước và cách phân bổ thời gian](LO-TRINH-UU-TIEN.md)
 - [Chương trình đào tạo liên thông CNTT từ xa K21/2026](CHUONG-TRINH-K21-2026.md)
 - [Phạm vi đã đối chiếu, phần còn thiếu](PHAM-VI-VA-NGUON.md)
 - [Cách thêm tài liệu và quản lý Git](HUONG-DAN-DONG-GOP.md)

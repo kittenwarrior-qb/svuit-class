@@ -9,6 +9,14 @@ Nguồn chính: [Cổng thông tin UIT — chương trình K21/2026](https://por
 - Kiến thức chuyên nghiệp: 37 TC, gồm 25 TC cơ sở ngành bắt buộc và tối thiểu 12 TC chuyên ngành/tự chọn theo quy định.
 - Tốt nghiệp: 12 TC, gồm thực tập doanh nghiệp 2 TC bắt buộc và một lựa chọn tốt nghiệp 10 TC.
 
+## Tuyển sinh, chuẩn đầu ra và tốt nghiệp
+
+Trang tuyển sinh nêu đối tượng là công dân Việt Nam đủ sức khỏe, không trong thời gian can án/truy cứu trách nhiệm hình sự, đã có bằng cao đẳng ngành đúng hoặc ngành gần CNTT; ngành gần cần xét hồ sơ và có thể phải học bổ sung. Văn bằng nước ngoài cần được công nhận theo quy định. Danh sách môn bổ sung được nêu là IT001 — Nhập môn lập trình, IT002 — Lập trình hướng đối tượng, IT004 — Cơ sở dữ liệu, IT005 — Nhập môn mạng máy tính, IT012 — Tổ chức và cấu trúc máy tính II (tổng danh mục 20 TC). Ngành đúng không cần bổ sung; với ngành gần, trường so bảng điểm để quyết định môn cần học. Đây là mô tả chung của trang tuyển sinh, không phải kết luận hồ sơ cá nhân.
+
+Chuẩn đầu ra gồm nền tảng khoa học và CNTT; khảo sát, phân tích và đề xuất giải pháp; thiết kế, hiện thực và đánh giá hệ thống; giao tiếp/hợp tác; ngoại ngữ chuyên ngành; hiểu biết quản lý; trách nhiệm nghề nghiệp, pháp luật và đạo đức. Điều kiện tốt nghiệp công bố: tích lũy tối thiểu 59 TC, hoàn thành các môn bắt buộc theo chuyên ngành và đáp ứng quy chế đào tạo hiện hành của UIT.
+
+Trang nêu quy chế đào tạo theo quy định hiện hành của Trường. Mục “chuỗi môn học” mô tả phát triển dần kỹ năng phân tích ở HK1–HK4 và kỹ năng thiết kế/đánh giá hệ thống ở HK2–HK4; đó là liên kết phát triển chuẩn đầu ra, không thay cho bảng tiên quyết đăng ký môn.
+
 ## Kế hoạch giảng dạy mẫu
 
 Đây là kế hoạch mẫu của chương trình, không phải xác nhận đăng ký cá nhân.
