@@ -14,6 +14,10 @@ Tài liệu tự học tiếng Việt cho **IE101, IE005, IE103, IT007, MA003**.
 | 5 | [IT007 — Hệ điều hành](IT007-he-dieu-hanh/README.md) | IT007.G12.LT.CNTT | 4 | 10 | 29/10 → 31/12 |
 | 6 | [MA003 — Đại số tuyến tính](MA003-dai-so-tuyen-tinh/README.md) | MA003.G12.LT.CNTT | 3 | 8 | 30/10 → 18/12 |
 
+## Môn tham khảo bổ sung
+
+[IT004 — Cơ sở dữ liệu](IT004-co-so-du-lieu/README.md) có ghi chú và nguồn học liệu lớp cũ. IT004 **không nằm trong lịch 5 môn ở trên**; chỉ dùng nếu bạn muốn học thêm hoặc đây là môn cần cho chương trình khác.
+
 Lịch trên được chép từ ảnh người học cung cấp, **ảnh không ghi năm**. Không tự gán năm 2026 cho lịch này; xác nhận lịch hiện hành trên LMS. Tổng cộng 15 tín chỉ, 40 buổi theo ảnh.
 
 ## Học theo cách nào?

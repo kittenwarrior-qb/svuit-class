@@ -9,6 +9,7 @@ Ngày đối chiếu nguồn: 23/10/2026. Tài liệu được viết mới bằ
 | IE103 | Có đề cương PDF công khai trên website khoa UIT; bao gồm tổ chức, xử lý, trình bày thông tin và mô hình CSDL tiên tiến | Phiên bản áp dụng G12, DBMS bắt buộc, tỉ lệ điểm |
 | IT007 | Trang IT007 trong bản SVUIT/mmtt hiện có liệt kê các chủ đề và lab; đối chiếu thêm sách tác giả OSTEP | Đề cương G12, phân chia giữa/cuối kỳ, định dạng đề |
 | MA003 | Trang MA003 trong bản SVUIT/mmtt hiện có có hệ tuyến tính, ma trận, không gian vector, ánh xạ tuyến tính | Có thi trị riêng, trực giao, bình phương tối thiểu không |
+| IT004 (bổ sung) | Folder Drive do người học cung cấp; ghi chú đối chiếu đề cương, bài giảng, bài tập và sách tham khảo | Không nằm trong lịch 5 môn ở ảnh; tài liệu nguồn là học kỳ cũ 2022–2024, chưa xác minh áp dụng cho lớp hiện tại |
 
 Trị riêng, trực giao và bình phương tối thiểu ở MA003 là phần **mở rộng cần kiểm tra đề cương**. Lộ trình theo 8/4/10/10/8 buổi là phương án ôn tập dựa vào số buổi trong ảnh, không phải kế hoạch giảng dạy công bố.
 
@@ -21,6 +22,7 @@ Trị riêng, trực giao và bình phương tối thiểu ở MA003 là phần 
 - [UIT Knowledge — kênh YouTube](https://www.youtube.com/@UIT_Knowledge/videos) và [website](https://uitknowledge.org/): kênh của sinh viên, dùng tham khảo. Đã xác minh được video ôn MA003 giữa kỳ và IT007 giữa kỳ đời trước; chưa tìm được video khớp IE101, IE005, IE103. Website liệt kê Hệ điều hành trong mục đăng ký video và yêu cầu MSSV/email Teams; quyền xem có thể theo đăng ký. Không tải lại video lên repo.
 - [Đề cương IE103 công khai](https://fit.uit.edu.vn/attachments/article/4872/IE103%20-%20Quan%20ly%20Thong%20tin.pdf): biểu mẫu ghi 2015, không coi ngày máy tìm kiếm thu thập là ngày cập nhật nội dung.
 - [SVUIT — IT007](https://github.com/SVUIT/mmtt/blob/main/docs/MonHocCoSoNganh/IT007.md) và [SVUIT — MA003](https://github.com/SVUIT/mmtt/blob/main/docs/MonHocDaiCuong/MA003.md): tham khảo cộng đồng, đã đọc bản nguồn có sẵn trong workspace ban đầu. Tỉ lệ điểm/đề thi ở đó có thể thuộc lớp khác.
+- [SVUIT IT004](https://svuit.org/mmtt/docs/MonHocCoSoNganh/IT004.html) dẫn tới [folder Drive IT004](https://drive.google.com/drive/folders/1lKEm-LJrxY0QrZvvxx0gpiCslhTEv3aJ); đã tải/kiểm kê và tổng hợp tại [IT004 — Cơ sở dữ liệu](IT004-co-so-du-lieu/README.md). Không gộp IT004 vào lịch 5 môn ban đầu.
 - Hai trang SVUIT trên dẫn tới [folder Drive IT007](https://drive.google.com/drive/folders/1Fv5QgPX6cuuvXp40pAEqgwweRLpMlHOM?usp=sharing) và [folder Drive MA003](https://drive.google.com/drive/folders/1qNEgT43jABoGXc4_jXfiboyLK7FYqasH?usp=drive_link). Repo này hiện chỉ gắn link tham khảo; chưa tải hay kiểm kê PDF bên trong, và quyền truy cập có thể phụ thuộc Google account.
 - Trang [SVUIT IT004](https://svuit.org/mmtt/docs/MonHocCoSoNganh/IT004.html) là ví dụ trang môn có nút sang Drive, không phải bản thân một bộ PDF. Trang còn ghi các folder ôn thi đã bị gỡ theo yêu cầu của trường. Trong bản SVUIT/mmtt đang có tại workspace, mình chỉ tìm thấy link Drive tương ứng cho IT007 và MA003; chưa thấy trang/link học liệu tương ứng cho IE101, IE005 hay IE103.
 
