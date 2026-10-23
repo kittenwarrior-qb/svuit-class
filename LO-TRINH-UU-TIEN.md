@@ -30,4 +30,3 @@ Theo kế hoạch mẫu chính thức, HK1 là **IE005 (1), IE109 (4), IE103 (4)
 - **Ưu tiên thời gian:** bài nộp có hạn và môn kết thúc sớm trước; sau đó đến môn nhiều tín chỉ/nhiều buổi; ôn MA003 đều thay vì học dồn.
 
 Không dùng số buổi hoặc số tín chỉ để đoán điểm, đề thi hay độ khó thực tế. Nếu giảng viên có lịch/đề cương khác, lấy nội dung lớp làm chuẩn.
-

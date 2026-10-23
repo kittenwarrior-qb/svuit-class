@@ -13,7 +13,7 @@ Ngày đối chiếu nguồn: 23/10/2026. Tài liệu được viết mới bằ
 
 ## Đối chiếu khóa liên thông từ xa 2026
 
-Đã đọc trang [chương trình chính thức K21/2026](https://portal.uit.edu.vn/chuong-trinh-dao-tao/cu-nhan-lien-thong-nganh-cong-nghe-thong-tin-hinh-thuc-dao-tao-tu-xa-khoa-21-2026) và lập bản tóm lược đầy đủ các bảng môn/tín chỉ tại [CHUONG-TRINH-K21-2026.md](CHUONG-TRINH-K21-2026.md). Chương trình công bố tối thiểu 59 TC, 4 học kỳ chính; kế hoạch mẫu HK1 là IE005, IE109, IE103, MA004, IT007 (17 TC), còn MA003 nằm HK2. Ảnh lịch của người học có IE101 và tổng 15 TC, nên không khớp kế hoạch mẫu K21. Trang có bảng quy đổi IE101 → IE109 dành cho khóa 2025 trở về trước; chưa thể kết luận cách áp dụng cho cá nhân.
+Đã đọc các mục tuyển sinh, quy chế, chuẩn đầu ra, thang nhận thức/kỹ năng/thái độ, chương trình, môn và chuẩn đầu ra, chuỗi môn, kế hoạch giảng dạy, tốt nghiệp và mô tả học phần trên trang [chương trình chính thức K21/2026](https://portal.uit.edu.vn/chuong-trinh-dao-tao/cu-nhan-lien-thong-nganh-cong-nghe-thong-tin-hinh-thuc-dao-tao-tu-xa-khoa-21-2026). Bản tóm lược bảng môn/tín chỉ ở [CHUONG-TRINH-K21-2026.md](CHUONG-TRINH-K21-2026.md); ưu tiên học tập ở [LO-TRINH-UU-TIEN.md](LO-TRINH-UU-TIEN.md). Chương trình công bố tối thiểu 59 TC, 4 học kỳ chính; kế hoạch mẫu HK1 là IE005, IE109, IE103, MA004, IT007 (17 TC), còn MA003 nằm HK2. Ảnh lịch có IE101 và tổng 15 TC, nên không khớp kế hoạch mẫu K21. Trang có bảng quy đổi IE101 → IE109 dành cho khóa 2025 trở về trước; chưa thể kết luận cách áp dụng cho cá nhân.
 
 Portal TKB ngày 23/10/2026 hiển thị chưa có lớp ĐKHP HK1 năm học 2026–2027, đồng thời hiện lỗi tải dữ liệu HTTP 400. Mở mục tải đề cương không có môn lựa chọn và nút tải bị vô hiệu hóa; chưa tải được đề cương riêng từ portal.
 
