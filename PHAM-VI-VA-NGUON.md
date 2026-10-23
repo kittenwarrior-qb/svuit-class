@@ -21,6 +21,8 @@ Trị riêng, trực giao và bình phương tối thiểu ở MA003 là phần 
 - [UIT Knowledge — kênh YouTube](https://www.youtube.com/@UIT_Knowledge/videos) và [website](https://uitknowledge.org/): kênh của sinh viên, dùng tham khảo. Đã xác minh được video ôn MA003 giữa kỳ và IT007 giữa kỳ đời trước; chưa tìm được video khớp IE101, IE005, IE103. Website liệt kê Hệ điều hành trong mục đăng ký video và yêu cầu MSSV/email Teams; quyền xem có thể theo đăng ký. Không tải lại video lên repo.
 - [Đề cương IE103 công khai](https://fit.uit.edu.vn/attachments/article/4872/IE103%20-%20Quan%20ly%20Thong%20tin.pdf): biểu mẫu ghi 2015, không coi ngày máy tìm kiếm thu thập là ngày cập nhật nội dung.
 - [SVUIT — IT007](https://github.com/SVUIT/mmtt/blob/main/docs/MonHocCoSoNganh/IT007.md) và [SVUIT — MA003](https://github.com/SVUIT/mmtt/blob/main/docs/MonHocDaiCuong/MA003.md): tham khảo cộng đồng, đã đọc bản nguồn có sẵn trong workspace ban đầu. Tỉ lệ điểm/đề thi ở đó có thể thuộc lớp khác.
+- Hai trang SVUIT trên dẫn tới [folder Drive IT007](https://drive.google.com/drive/folders/1Fv5QgPX6cuuvXp40pAEqgwweRLpMlHOM?usp=sharing) và [folder Drive MA003](https://drive.google.com/drive/folders/1qNEgT43jABoGXc4_jXfiboyLK7FYqasH?usp=drive_link). Repo này hiện chỉ gắn link tham khảo; chưa tải hay kiểm kê PDF bên trong, và quyền truy cập có thể phụ thuộc Google account.
+- Trang [SVUIT IT004](https://svuit.org/mmtt/docs/MonHocCoSoNganh/IT004.html) là ví dụ trang môn có nút sang Drive, không phải bản thân một bộ PDF. Trang còn ghi các folder ôn thi đã bị gỡ theo yêu cầu của trường. Trong bản SVUIT/mmtt đang có tại workspace, mình chỉ tìm thấy link Drive tương ứng cho IT007 và MA003; chưa thấy trang/link học liệu tương ứng cho IE101, IE005 hay IE103.
 
 ## Để hoàn thiện theo đúng lớp
 
