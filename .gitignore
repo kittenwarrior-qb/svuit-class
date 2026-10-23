@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+*.db
+*.sqlite*
+ket-qua-ca-nhan/
+**/tai-lieu-lop/*
+!**/tai-lieu-lop/README.md
