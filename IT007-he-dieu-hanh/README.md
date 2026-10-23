@@ -21,5 +21,6 @@ Mục tiêu: giải thích OS quản lý CPU, tiến trình, đồng bộ, bộ 
 - [Bài tập có lời giải](02-bai-tap.md)
 - [Công thức và ôn tập](03-on-tap.md)
 - [Nguồn](04-tai-lieu.md)
+- [Đề thi và ôn tập](05-de-thi-va-on-tap.md)
 - [Lab và mã mô phỏng](thuc-hanh/README.md)
 - [Tài liệu lớp](tai-lieu-lop/README.md)

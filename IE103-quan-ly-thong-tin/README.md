@@ -21,6 +21,7 @@ Mục tiêu: biến yêu cầu thành mô hình dữ liệu; truy vấn đúng; 
 - [Bài tập và đáp án](02-bai-tap.md)
 - [Ôn tập](03-on-tap.md)
 - [Nguồn](04-tai-lieu.md)
+- [Đề thi và ôn tập](05-de-thi-va-on-tap.md)
 - [Lab SQL và XML](thuc-hanh/README.md)
 - [Học liệu lớp](tai-lieu-lop/README.md)
 

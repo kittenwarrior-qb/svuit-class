@@ -19,5 +19,6 @@ Mục tiêu tự học: mô tả được đường đi của một yêu cầu w
 - [Bài tập và lời giải](02-bai-tap.md)
 - [Ôn tập](03-on-tap.md)
 - [Nguồn học](04-tai-lieu.md)
+- [Đề thi và ôn tập](05-de-thi-va-on-tap.md)
 - [Lab](thuc-hanh/README.md)
 - [Bổ sung tài liệu lớp](tai-lieu-lop/README.md)
