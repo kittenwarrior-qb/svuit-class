@@ -3,7 +3,7 @@
 | Nguồn sơ cấp | Nội dung / trạng thái |
 |---|---|
 | [UIT — IE103 PDF](https://fit.uit.edu.vn/attachments/article/4872/IE103%20-%20Quan%20ly%20Thong%20tin.pdf) | Đã mở 23/10/2026. Biểu mẫu 2015; chưa xác nhận áp dụng G12. Dùng để đối chiếu các nhóm chủ đề, không chép tỉ lệ điểm vào kế hoạch lớp |
-| [Thư viện UIT — hồ sơ tài liệu IE103](https://ir.vnulib.edu.vn/entities/publication/5fb9f608-2b27-42f5-8b13-e24264fa4543) | Đầu mục được nối từ danh mục đề cương ngành CNTT | Hồ sơ yêu cầu đăng nhập Thư viện số nên chưa đọc được tên sách/phiên bản. Đăng nhập để tra; chưa xác nhận là giáo trình G12 |
+| [Thư viện UIT — hồ sơ tài liệu IE103](https://ir.vnulib.edu.vn/entities/publication/5fb9f608-2b27-42f5-8b13-e24264fa4543) | Hồ sơ được nối từ danh mục đề cương CNTT; yêu cầu đăng nhập để xem tên/phiên bản, chưa xác nhận áp dụng G12 |
 | [PostgreSQL Tutorial](https://www.postgresql.org/docs/current/tutorial.html) | Mở 23/10/2026; học SQL và relational database. URL current đổi theo thời gian; xem phiên bản đang dùng |
 | [SQLite SQL](https://www.sqlite.org/lang.html) | Cú pháp thực thi lab; xem mục tính năng bị lược bỏ khi so với DBMS server |
 | [Python sqlite3](https://docs.python.org/3/library/sqlite3.html) | API kết nối, parameter binding, transaction; chọn mục phiên bản phù hợp Python đang dùng |
