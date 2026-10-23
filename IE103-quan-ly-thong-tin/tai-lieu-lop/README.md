@@ -1,3 +1,3 @@
-# Tài liệu lớp IE103
+# Học liệu IE103 lưu cục bộ
 
-Chưa có slide, DBMS bắt buộc và bộ bài tập chính thức của G12. Lưu bản cá nhân ở đây; Git mặc định bỏ qua file ngoài README. Đề cương công khai được liên kết trong danh mục nguồn, chưa tải lại/tái phát hành.
+Đã tải đề cương PDF công khai của UIT: `De-cuong-IE103.pdf` (biểu mẫu cũ; không đại diện cho lớp G12 nếu giảng viên chưa xác nhận). FIT/UIT còn đăng [kế hoạch giảng dạy chi tiết CDIO](https://fit.uit.edu.vn/attachments/article/4872/IE103_QuanlyThongtin_CDIO.4.2018.pdf), dùng tham khảo chủ đề; bản lưu là `Ke-hoach-giang-day-IE103-CDIO-2018.pdf`. Tệp PDF được giữ local, Git bỏ qua.

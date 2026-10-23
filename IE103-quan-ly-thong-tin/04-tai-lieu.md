@@ -3,6 +3,7 @@
 | Nguồn sơ cấp | Nội dung / trạng thái |
 |---|---|
 | [UIT — IE103 PDF](https://fit.uit.edu.vn/attachments/article/4872/IE103%20-%20Quan%20ly%20Thong%20tin.pdf) | Đã mở 23/10/2026. Biểu mẫu 2015; chưa xác nhận áp dụng G12. Dùng để đối chiếu các nhóm chủ đề, không chép tỉ lệ điểm vào kế hoạch lớp |
+| [FIT/UIT — kế hoạch giảng dạy IE103 CDIO 2018](https://fit.uit.edu.vn/attachments/article/4872/IE103_QuanlyThongtin_CDIO.4.2018.pdf) | Đã tải vào `tai-lieu-lop/Ke-hoach-giang-day-IE103-CDIO-2018.pdf`; có lịch chủ đề thu thập/làm sạch dữ liệu, SQL/T-SQL, trình bày và bảo mật. Bản 2018, không coi là lịch G12 |
 | [Thư viện UIT — hồ sơ tài liệu IE103](https://ir.vnulib.edu.vn/entities/publication/5fb9f608-2b27-42f5-8b13-e24264fa4543) | Hồ sơ được nối từ danh mục đề cương CNTT; yêu cầu đăng nhập để xem tên/phiên bản, chưa xác nhận áp dụng G12 |
 | [PostgreSQL Tutorial](https://www.postgresql.org/docs/current/tutorial.html) | Mở 23/10/2026; học SQL và relational database. URL current đổi theo thời gian; xem phiên bản đang dùng |
 | [SQLite SQL](https://www.sqlite.org/lang.html) | Cú pháp thực thi lab; xem mục tính năng bị lược bỏ khi so với DBMS server |

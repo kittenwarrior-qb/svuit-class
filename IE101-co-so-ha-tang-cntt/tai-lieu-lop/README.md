@@ -1,3 +1,3 @@
-# Tài liệu lớp IE101
+# Học liệu IE101 lưu cục bộ
 
-Chưa có slide/đề cương riêng của giảng viên trong ảnh. Đặt bản cá nhân ở đây theo `buoi-01-ten-chu-de.ext`. Git bỏ qua các file trong folder này, ngoại trừ README. Ghi tác giả, buổi học và quyền chia sẻ trước khi đưa tài liệu lên GitHub.
+Đã tải đề cương PDF công khai của UIT: `De-cuong-IE101.pdf` (biểu mẫu cũ; không đại diện cho lớp G12 nếu giảng viên chưa xác nhận). Nguồn: [trang khoa FIT/UIT](https://fit.uit.edu.vn/attachments/article/4872/IE101%20-%20Co%20so%20ha%20tang%20cong%20nghe%20thong%20tin.pdf). Tệp được giữ local, Git bỏ qua PDF.

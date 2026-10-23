@@ -4,6 +4,8 @@ Tài liệu tự học tiếng Việt cho **IE101, IE005, IE103, IT007, MA003**.
 
 Đây là bản tổng hợp nền tảng để học chủ động, **chưa phải toàn bộ học liệu chính thức của lớp**. Chưa có slide, đề thi, rubric và đề cương riêng của các giảng viên trong ảnh. Không suy ra cấu trúc thi hoặc tỉ lệ điểm từ lớp khác. Phạm vi mở rộng được đánh dấu trong từng môn.
 
+**Lưu ý chương trình:** [Chương trình liên thông từ xa K21/2026](CHUONG-TRINH-K21-2026.md) trên portal có kế hoạch mẫu khác với ảnh 5 môn bạn gửi: ảnh có IE101, trong khi kế hoạch K21 liệt kê IE109; MA003 nằm HK2 theo kế hoạch mẫu. Trang TKB cá nhân hiện chưa tải được dữ liệu (HTTP 400), vì vậy cần xác nhận kế hoạch áp dụng cho bạn với đơn vị đào tạo.
+
 ## Mở từng môn
 
 | Thứ | Môn / folder | Mã lớp | TC | Số buổi | Từ ngày → đến ngày dự kiến |
@@ -31,6 +33,7 @@ Lịch trên được chép từ ảnh người học cung cấp, **ảnh không
 ## Tài liệu dùng chung
 
 - [Kế hoạch học và theo dõi tiến độ](KE-HOACH-HOC.md)
+- [Chương trình đào tạo liên thông CNTT từ xa K21/2026](CHUONG-TRINH-K21-2026.md)
 - [Phạm vi đã đối chiếu, phần còn thiếu](PHAM-VI-VA-NGUON.md)
 - [Cách thêm tài liệu và quản lý Git](HUONG-DAN-DONG-GOP.md)
 - [Quyền sử dụng và nguồn gốc](NGUON-GOC.md)
