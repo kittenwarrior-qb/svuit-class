@@ -4,6 +4,7 @@ Danh sách đề UIT/MA003 do người học chia sẻ và video ôn/chữa đ�
 
 ## Đề cũ và đề ôn
 
+- [Đề giữa kỳ HK1 2023–2024 (ảnh scan trang 1)](de-thi/DE_THI_GIUA_KY_HK1_2023-2024/README.md) — [nguồn Studocu](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/dai-hqc-cong-nghe-thong-tin-de-thi-giua-ky-mon-dai-2023-2024/144361915).
 - [ĐỀ THI GIỮA KỲ MÔN ĐẠI SỐ TT — GK1 2025–2026 (ảnh chụp trang 1)](de-thi/DE_THI_GIUA_KY_DAI_SO_TT_GK1_2025-2026/page-01.png) — [nguồn Studocu](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/de-gk1-dstt-2025-2026-de-gk1-dstt-25-26/144743509).
 - [Giữa kỳ HK1 2022–2023, đề mẫu 1 và 2](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/de-thi-mau-giua-ky-1-mon-dstt-nam-hoc-2022-2023-de-1/76054714) — xem được preview nội dung chữ; Studocu khóa trang/ảnh đầy đủ bằng Premium.
 - [Giữa kỳ HK1 2022–2023, đề mẫu 1](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/de-thi-mau-giua-ky-1-mon-dstt-nam-hoc-2022-2023-de-1/43261995)
@@ -32,3 +33,5 @@ Bro đang ưu tiên đề UIT; phần này chỉ ghi nhận bộ MIT tải trư�
 ## Cách dùng và giới hạn
 
 Tự giải tay trước khi mở lời giải. Chọn đề theo chủ đề đã học; một số đề mẫu và đề cũ có thể khác chương trình, thời lượng hoặc phạm vi của lớp G12. Link là trang chia sẻ cộng đồng, không phải kho đề chính thức của trường.
+
+- [Giữa kỳ 2020–2021 (ảnh scan trang 1)](de-thi/DE_THI_GIUA_KY_2020-2021/README.md) — [nguồn Studocu](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/dai-hqc-2020-2021-giua-ky-mon-dai-so-tuyen-tinh/146270995).
