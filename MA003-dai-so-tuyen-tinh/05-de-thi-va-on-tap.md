@@ -4,6 +4,7 @@ Danh sách đề UIT/MA003 do người học chia sẻ và video ôn/chữa đ�
 
 ## Đề cũ và đề ôn
 
+- [ĐỀ THI GIỮA KỲ MÔN ĐẠI SỐ TT — GK1 2025–2026 (ảnh chụp trang 1)](de-thi/DE_THI_GIUA_KY_DAI_SO_TT_GK1_2025-2026/page-01.png) — [nguồn Studocu](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/de-gk1-dstt-2025-2026-de-gk1-dstt-25-26/144743509).
 - [Giữa kỳ HK1 2022–2023, đề mẫu 1 và 2](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/de-thi-mau-giua-ky-1-mon-dstt-nam-hoc-2022-2023-de-1/76054714)
 - [Giữa kỳ HK1 2022–2023, đề mẫu 1](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/de-thi-mau-giua-ky-1-mon-dstt-nam-hoc-2022-2023-de-1/43261995)
 - [Giữa kỳ HK1 2022–2023, đề mẫu 2](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin/dai-so-tuyen-tinh/de-thi-mau-giua-ky-1-mon-dstt-nam-hoc-2022-2023-de-2/106697289)
