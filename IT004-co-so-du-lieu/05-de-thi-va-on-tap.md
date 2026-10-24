@@ -29,3 +29,12 @@ Chưa có ảnh trang đề IT004 được lưu trong repo. Studocu hiện yêu 
 ## Cách dùng và giới hạn
 
 Ưu tiên đề cương/lịch kiểm tra của lớp hiện tại. Các tài liệu trên Studocu do người học đăng, có thể khác giảng viên, học kỳ hoặc loại bài thi; một số mục chỉ là preview hoặc tài liệu ôn.
+
+### Nguồn đề UIT bổ sung
+
+- [Đề giữa kỳ CSDL — Khoa Hệ thống Thông tin, đề 1](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin/csdl-co-so-du-lieu/de-thi-giua-ky-mon-co-so-du-lieu-khoa-he-thong-thong-tin/133216097) — nội dung preview có đề và mô hình ER; kiểm tra đúng năm/lớp trước khi ôn.
+- [Tổng hợp đề cuối kỳ CSDL HK1](https://www.studocu.vn/vn/document/dai-hoc-quoc-gia-thanh-pho-ho-chi-minh-truong-dai-hoc-cong-nghe-thong-tin/co-so-du-lieu/de-thi-cuoi-ky-csdl-hk1-tong-hop-de-thi-mon-co-so-du-lieu/151405037) — trang nguồn ghi đề 90 phút, 2 trang.
+- [Đề cuối kỳ CSDL HK2 2023–2024, mã đề 02](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin/csdl-co-so-du-lieu/2023-2024-hk2-de-thi-cuoi-ky-csdl/121064631).
+- [Đề giữa kỳ CSDL HK1 2023–2024](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin/csdl-co-so-du-lieu/de-2023-2024-csdl-hk1-de-2023-2024-csdl-hk1/122361693) — preview có nội dung chữ.
+- [Đề thi thực hành CSDL HK1 2024–2025, mã đề 02](https://www.studocu.vn/vn/document/university-of-information-technology/co-so-du-lieu/de-thck-csdl-2024-2025-de02/114180361) — trang công khai hiển thị nội dung chữ; ảnh gốc không được cung cấp thành scan.
+- [Kho học phần CSDL IT004 trên Studocu](https://www.studocu.vn/vn/course/university-of-information-technology/co-so-du-lieu/6936696) — danh sách tài liệu môn học, đề và bài thực hành do cộng đồng đăng.
