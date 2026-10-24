@@ -5,15 +5,15 @@ Danh sách đề UIT/MA003 do người học chia sẻ và video ôn/chữa đ�
 ## Đề cũ và đề ôn
 
 - [ĐỀ THI GIỮA KỲ MÔN ĐẠI SỐ TT — GK1 2025–2026 (ảnh chụp trang 1)](de-thi/DE_THI_GIUA_KY_DAI_SO_TT_GK1_2025-2026/page-01.png) — [nguồn Studocu](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/de-gk1-dstt-2025-2026-de-gk1-dstt-25-26/144743509).
-- [Giữa kỳ HK1 2022–2023, đề mẫu 1 và 2](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/de-thi-mau-giua-ky-1-mon-dstt-nam-hoc-2022-2023-de-1/76054714)
+- [Giữa kỳ HK1 2022–2023, đề mẫu 1 và 2](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/de-thi-mau-giua-ky-1-mon-dstt-nam-hoc-2022-2023-de-1/76054714) — xem được preview nội dung chữ; Studocu khóa trang/ảnh đầy đủ bằng Premium.
 - [Giữa kỳ HK1 2022–2023, đề mẫu 1](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/de-thi-mau-giua-ky-1-mon-dstt-nam-hoc-2022-2023-de-1/43261995)
 - [Giữa kỳ HK1 2022–2023, đề mẫu 2](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin/dai-so-tuyen-tinh/de-thi-mau-giua-ky-1-mon-dstt-nam-hoc-2022-2023-de-2/106697289)
 - [Cuối kỳ HK1 2022–2023](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/mau-de-thi-dstt-ck-de-thi-dstt-ck/80440805)
 - [Giữa kỳ học kỳ hè 2013–2014](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin/dai-so-tuyen-tinh/de-thi-giua-ky-he-mon-dstt-nam-hoc-2013-2014/114062433)
 - [Giữa kỳ HK1 2023–2024, đề mẫu 2](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/de-thi-mau-giua-ky-1-mon-dstt-nam-hoc-2023-2024-de-2/81032958)
-- [Cuối kỳ HK1 2023–2024, thi ngày 18/01/2024](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/de-thi-cuoi-ky-1-mon-dstt-nam-hoc-2023-2024/114978595)
+- [Cuối kỳ HK1 2023–2024, thi ngày 18/01/2024](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/de-thi-cuoi-ky-1-mon-dstt-nam-hoc-2023-2024/114978595) — preview hiển thị toàn bộ một trang trên trình duyệt, nhưng nguồn không cung cấp file ảnh trang riêng để lưu vào repo.
 - [Đề cuối kỳ học kỳ I môn Đại số tuyến tính](https://www.studocu.vn/vn/document/university-of-information-technology/dai-so-tuyen-tinh/de-thi-cuoi-ky-mon-dai-so-tuyen-tinh-hoc-ky-i/144940717) — bản sinh viên đăng; năm học trong preview chưa rõ.
-- [Giữa kỳ HK1 2024–2025](https://www.studocu.vn/vn/document/university-of-information-technology/dai-so-tuyen-tinh/de-thi-giua-ky-mon-dstt-hk1-2024-2025/131033554)
+- [Giữa kỳ HK1 2024–2025](https://www.studocu.vn/vn/document/university-of-information-technology/dai-so-tuyen-tinh/de-thi-giua-ky-mon-dstt-hk1-2024-2025/131033554) — xem được preview chữ, không có scan trang trong phần truy cập hiện tại.
 - [Ôn cuối kỳ HK1 2023–2024](https://www.studocu.vn/vn/course/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/5212349)
 - [Ôn cuối kỳ HK1 2024–2025](https://www.studocu.vn/vn/document/university-of-information-technology/dai-so-tuyen-tinh/de-on-tap-cuoi-ky-1-mon-dstt-nam-hoc-2024-2025/124735084)
 - [Ôn cuối kỳ HK1 2025–2026](https://www.studocu.vn/vn/document/university-of-information-technology/dai-so-tuyen-tinh/de-on-cuoi-ky-1-mon-dai-so-tuyen-tinh-dstt-2025-2026/167085052)
