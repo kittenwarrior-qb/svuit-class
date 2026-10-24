@@ -17,3 +17,8 @@ Danh sách cùng format cho đề thi, bài ôn và video chữa đề. Một s�
 ## Cách dùng và giới hạn
 
 Ưu tiên các chủ đề đúng đề cương IE103: tổ chức và biểu diễn thông tin, truy vấn, an toàn dữ liệu và các mô hình CSDL. Không nhầm tài liệu quản lý dự án CNTT với đề môn Quản lý thông tin.
+
+### Tài liệu IE103 tìm thêm (24/10/2026)
+
+- [Đề cương môn học IE103 — Quản lý Thông tin](https://www.studocu.vn/vn/document/university-of-information-technology/quan-li-thong-tin/ie103-quanly-thongtin/118999919) — đề cương do sinh viên chia sẻ, hữu ích để so nội dung lớp; chưa xác nhận là bản chính thức hiện hành.
+- [Bài tập thực hành 02 IE103, HK2 2025–2026](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin/quan-ly-thong-tin/bai-tap-thuc-hanh-02-quan-ly-thong-tin-ie103/162917131) — bài thực hành SQL, không phải đề thi.

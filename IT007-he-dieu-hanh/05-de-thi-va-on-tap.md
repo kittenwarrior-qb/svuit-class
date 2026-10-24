@@ -27,3 +27,7 @@ Danh sách đề UIT do người học chia sẻ và video ôn/chữa đề. Tra
 
 Tự làm đề có bấm giờ trước khi xem video. Một số đề thuộc chương trình/giảng viên khác năm; đối chiếu nội dung, thời lượng và quy ước giải thuật với lớp hiện tại. Link là trang chia sẻ cộng đồng, không phải kho đề chính thức của trường.
 
+
+### Nguồn mới đã kiểm tra (24/10/2026)
+
+- [Đề giữa kỳ HK1 2025–2026, đề 1 (4 trang)](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/uit-cong-nghe-thong-tin/de-thi-giua-hk1-2025-2026-mon-he-dieu-hanh-de-so-1/158874789) — trang đầu hiển thị rõ trong trình duyệt; các trang còn lại là khung trống trong bản xem hiện tại nên chưa lưu thành ảnh.
