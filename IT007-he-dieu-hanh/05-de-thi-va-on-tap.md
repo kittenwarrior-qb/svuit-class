@@ -4,6 +4,7 @@ Danh sách đề UIT do người học chia sẻ và video ôn/chữa đề. Tra
 
 ## Đề cũ và đề ôn
 
+- [Đề thi thử giữa kỳ I 2024–2025, 65 phút (ảnh 2 trang)](de-thi/DE_THI_THU_GIUA_KY_I_HDHH_2024-2025_65_PHUT/README.md) — [nguồn Studocu](https://www.studocu.vn/vn/document/university-of-information-technology/he-dieu-hanh/hdhgk/108667419).
 - [Cuối kỳ HK1 2018–2019](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/he-dieu-hanh/ck-hk1-2018-2019-de-thi-cuoi-ky-hdh-uit-18-19hk1/48569484)
 - [Cuối kỳ HK1 2019–2020](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/he-dieu-hanh/ck-hk1-2019-2020-de1-final/53213395)
 - [Cuối kỳ HK1 2020–2021 — BHT CNPM](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/he-dieu-hanh/de-thi-cuoi-ky-1-mon-he-dieu-hanh-bhtcnpm/150698499)
