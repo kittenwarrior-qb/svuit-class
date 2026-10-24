@@ -24,7 +24,10 @@ Danh sách đề UIT/IT004 và tài liệu luyện tập đã tìm thấy. Link 
 
 ## Ảnh đề đã lưu
 
-Chưa có ảnh trang đề IT004 được lưu trong repo. Studocu hiện yêu cầu đăng nhập ở trang đã mở; preview chữ không đủ để tạo ảnh đề nguyên trang. Không dùng extension để lộ nội dung bị khóa.
+- [Đề thực hành HK1 2017–2018, mã đề 04 (2 trang)](de-thi/DE_THI_THUC_HANH_IT004_MA_DE_04_HK1_2017-2018/README.md) — chuyển ảnh từ bản PDF có sẵn trong thư mục tài liệu lớp.
+- [Đề thực hành HK1 2021–2022, mã đề 01 (3 trang)](de-thi/DE_THI_THUC_HANH_IT004_DE_01_HK1_2021-2022/README.md) — chuyển ảnh từ bản PDF có sẵn trong thư mục tài liệu lớp.
+
+> Ghi chú: Các trang Studocu chỉ hiện preview văn bản hoặc yêu cầu quyền tải; ảnh trên được tạo từ hai PDF sẵn có trong `tai-lieu-lop`, không phải từ phần nội dung Studocu bị khóa.
 
 ## Cách dùng và giới hạn
 
