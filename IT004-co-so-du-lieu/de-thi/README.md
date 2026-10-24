@@ -4,3 +4,5 @@ Các nguồn đề thi UIT/IT004 và tài liệu thực hành được liệt k�
 
 - Chưa có ảnh scan trang đề IT004 được xác minh và lưu trong thư mục này.
 - Xem từng link nguồn để biết tài liệu nào có thể truy cập trực tiếp.
+
+Nguồn đã kiểm tra trực tiếp: [Đề cuối kỳ IT004 HK1 2020–2021](https://www.studocu.vn/vn/document/university-of-information-technology/co-so-du-lieu/de-thi-cuoi-ky-co-so-du-lieu-khoa-he-thong-thong-tin-hk-i-2020-2021/149523914) có preview chữ công khai, ghi đề gồm 2 trang. Nút Download yêu cầu tải tài liệu lên hoặc nâng cấp Premium; vì vậy thư mục này hiện chỉ lưu nguồn tham khảo, chưa có ảnh scan.
