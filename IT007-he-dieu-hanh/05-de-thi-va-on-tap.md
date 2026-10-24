@@ -18,6 +18,14 @@ Danh sách đề UIT do người học chia sẻ và video ôn/chữa đề. Tra
 - [Đề thi thử kỳ I, 65 phút](https://www.studocu.vn/vn/document/university-of-information-technology/he-dieu-hanh/hdhgk/108667419)
 - [Trang học phần IT007](https://www.studocu.vn/vn/course/university-of-information-technology/he-dieu-hanh/6836050) · [danh sách đề cũ](https://www.studocu.vn/vn/course/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/he-dieu-hanh/other/5162125/5) · [danh sách bài ôn](https://www.studocu.vn/vn/course/university-of-information-technology/he-dieu-hanh/practice-materials/6836050/4)
 
+### Link đề UIT đã kiểm tra thêm
+
+- [Cuối kỳ HK2 2021–2022, đề 1](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/he-dieu-hanh/ck-hk2-2021-2022-de1-de-thi-cuoi-ky-hdh-uit-21-22/48569434) — Studocu ghi 6 trang, đề UIT, 80 phút.
+- [Giữa kỳ HK1 2023–2024, đề 1](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/he-dieu-hanh/gk-hk1-2023-2024-de1/97788295) · [cuối kỳ HK1 2023–2024, đề 1](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/he-dieu-hanh/ck-hk1-2023-2024-de1-de-thi-ck-hdh/97718221) — nguồn do sinh viên đăng, kiểm tra lại học kỳ/lớp trước khi dùng.
+- [Đề thi thử cuối kỳ 2022–2023 của BHT CNPM, 30 câu](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/he-dieu-hanh/bhtcnpm-de-thi-thu-he-dieu-hanh-cuoi-ky-2022-2023/47278138) — đề thi thử, không phải đề chính thức.
+- [Cuối kỳ HK2 2024–2025, mã đề 01](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/he-dieu-hanh/de-thi-cuoi-hoc-ky-ii-mon-he-dieu-hanh-ma-de-01-it007/149827661) — link trực tiếp tới tài liệu có trong danh sách học phần.
+- [Bộ ôn giữa kỳ IT007 của BHT HTTT UIT (2022)](https://www.uit.edu.vn/bai-viet/bht-he-thong-thong-tin-tong-ket-training-thi-thu-giua-hoc-ky-1) — trang UIT có link tài liệu ôn Hệ điều hành và thông tin buổi thi thử.
+
 ## Video chữa đề và ôn tập
 
 - UIT Knowledge: [ôn lý thuyết giữa kỳ](https://www.youtube.com/watch?v=BsmsDm5rS34), [ôn giữa kỳ trong một đêm](https://www.youtube.com/watch?v=C7Ay7FZpvPs), [ôn cuối kỳ](https://www.youtube.com/watch?v=nVQBpiL1ECE), [giải đề cuối kỳ](https://www.youtube.com/watch?v=aY8UmPuET-k), [chữa giữa kỳ HK1 2024–2025](https://www.youtube.com/watch?v=0p1-ZBNZAgU), [chữa giữa kỳ HK2 2023–2024](https://www.youtube.com/watch?v=AIBRwiTlW54), [một video chữa giữa kỳ HK2 2023–2024 khác](https://www.youtube.com/watch?v=kLhDg9979CE), [deadlock và bài tập đồ thị](https://www.youtube.com/watch?v=85KfuzOAIHQ), [ôn giữa kỳ](https://www.youtube.com/watch?v=hyfWOTCs3Zc).

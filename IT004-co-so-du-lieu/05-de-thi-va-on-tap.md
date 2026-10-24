@@ -18,6 +18,7 @@ Danh sách đề UIT/IT004 và tài liệu luyện tập đã tìm thấy. Link 
 
 ## Tài liệu ôn tập
 
+- [Tài liệu ôn tập giữa kỳ IT004 do BHT Hệ thống Thông tin UIT chia sẻ (2022)](https://www.uit.edu.vn/bai-viet/bht-he-thong-thong-tin-tong-ket-training-thi-thu-giua-hoc-ky-1) — trang UIT có liên kết bộ tài liệu CSDL; dùng để luyện tập, không phải đề thi chính thức.
 - [Ôn giữa kỳ CSDL UIT 2025–2026: đề thử và hỏi đáp](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin/csdl-co-so-du-lieu/on-thi-giua-ky-co-so-du-lieu-uit-2025-2026-hoi-dap-de-thi-thu-1/146026960) — tài liệu luyện tập, không xác nhận là đề chính thức.
 - [Trang bài tập thực hành IT004 trên Studocu](https://www.studocu.vn/vn/course/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/co-so-du-lieu/practice-materials/5735876/4) — có bài thực hành, đề mẫu và đáp án do người học chia sẻ.
 - Bộ bài giảng và thực hành trên máy cá nhân nằm trong `tai-lieu-lop/`; [nguồn Drive](https://drive.google.com/drive/folders/1lKEm-LJrxY0QrZvvxx0gpiCslhTEv3aJ). Các file này đang được Git bỏ qua và không được tải lên repo.

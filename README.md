@@ -1,8 +1,8 @@
-# Kho học tập 5 môn CNTT — lớp G12.LT.CNTT
+# Kho học tập 6 môn CNTT — lớp G12.LT.CNTT
 
-Tài liệu tự học tiếng Việt cho **IE101, IE005, IE103, IT007, MA003**. Mỗi môn có kiến thức, ví dụ giải thích, bài tập kèm đáp án, thực hành và danh mục nguồn. Cập nhật: **23/10/2026**.
+Tài liệu tự học tiếng Việt cho **IE005, IE101, IE103, IT004, IT007, MA003**. Mỗi môn có kiến thức, ví dụ giải thích, bài tập kèm đáp án, thực hành và danh mục nguồn. Cập nhật: **24/10/2026**.
 
-Đây là bản tổng hợp nền tảng để học chủ động, **chưa phải toàn bộ học liệu chính thức của lớp**. Chưa có slide, đề thi, rubric và đề cương riêng của các giảng viên trong ảnh. Không suy ra cấu trúc thi hoặc tỉ lệ điểm từ lớp khác. Phạm vi mở rộng được đánh dấu trong từng môn.
+Đây là bản tổng hợp nền tảng để học chủ động, **chưa phải toàn bộ học liệu chính thức của lớp**. Chưa có đủ slide, rubric và đề cương riêng của giảng viên; các ảnh đề hiện có là đề cũ/đề luyện tập và không xác nhận là đề của lớp G12. Không suy ra cấu trúc thi hoặc tỉ lệ điểm từ lớp khác. Phạm vi mở rộng được đánh dấu trong từng môn.
 
 **Lưu ý chương trình:** [Chương trình liên thông từ xa K21/2026](CHUONG-TRINH-K21-2026.md) trên portal có kế hoạch mẫu khác với ảnh 5 môn bạn gửi: ảnh có IE101, trong khi kế hoạch K21 liệt kê IE109; MA003 nằm HK2 theo kế hoạch mẫu. Trang TKB cá nhân hiện chưa tải được dữ liệu (HTTP 400), vì vậy cần xác nhận kế hoạch áp dụng cho bạn với đơn vị đào tạo.
 
@@ -16,9 +16,13 @@ Tài liệu tự học tiếng Việt cho **IE101, IE005, IE103, IT007, MA003**.
 | 5 | [IT007 — Hệ điều hành](IT007-he-dieu-hanh/README.md) | IT007.G12.LT.CNTT | 4 | 10 | 29/10 → 31/12 |
 | 6 | [MA003 — Đại số tuyến tính](MA003-dai-so-tuyen-tinh/README.md) | MA003.G12.LT.CNTT | 3 | 8 | 30/10 → 18/12 |
 
-## Môn tham khảo bổ sung
+## Môn thứ sáu trong kho
 
-[IT004 — Cơ sở dữ liệu](IT004-co-so-du-lieu/README.md) có ghi chú và nguồn học liệu lớp cũ. IT004 **không nằm trong lịch 5 môn ở trên**; chỉ dùng nếu bạn muốn học thêm hoặc đây là môn cần cho chương trình khác.
+[IT004 — Cơ sở dữ liệu](IT004-co-so-du-lieu/README.md) là môn thứ sáu bạn yêu cầu tổng hợp. Môn này không xuất hiện trong ảnh thời khóa biểu 5 môn đã gửi, nên mình giữ riêng ngoài bảng lịch và không tự đoán ngày học.
+
+## Ảnh đề thi hiện có
+
+Tổng cộng **12 ảnh trang đề** đã nằm trong repo: MA003 có 3 trang, IT007 có 4 trang, IT004 có 5 trang. IE005, IE101 và IE103 hiện chưa có ảnh đề trong kho. Mỗi bộ ảnh có README ghi số trang và nguồn; IT004 được chuyển từ hai PDF đã có trong thư mục học liệu local, các bộ còn lại lấy từ trang preview công khai đã lưu ở từng môn.
 
 Lịch trên được chép từ ảnh người học cung cấp, **ảnh không ghi năm**. Không tự gán năm 2026 cho lịch này; xác nhận lịch hiện hành trên LMS. Tổng cộng 15 tín chỉ, 40 buổi theo ảnh.
 
