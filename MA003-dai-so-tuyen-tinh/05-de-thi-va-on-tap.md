@@ -16,7 +16,7 @@ Danh sách đề UIT/MA003 do người học chia sẻ và video ôn/chữa đ�
 - [Giữa kỳ HK1 2024–2025](https://www.studocu.vn/vn/document/university-of-information-technology/dai-so-tuyen-tinh/de-thi-giua-ky-mon-dstt-hk1-2024-2025/131033554) — xem được preview chữ, không có scan trang trong phần truy cập hiện tại.
 - [Ôn cuối kỳ HK1 2023–2024](https://www.studocu.vn/vn/course/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/5212349)
 - [Ôn cuối kỳ HK1 2024–2025](https://www.studocu.vn/vn/document/university-of-information-technology/dai-so-tuyen-tinh/de-on-tap-cuoi-ky-1-mon-dstt-nam-hoc-2024-2025/124735084)
-- [Ôn cuối kỳ HK1 2025–2026](https://www.studocu.vn/vn/document/university-of-information-technology/dai-so-tuyen-tinh/de-on-cuoi-ky-1-mon-dai-so-tuyen-tinh-dstt-2025-2026/167085052)
+- [Ôn cuối kỳ HK1 2025–2026](https://www.studocu.vn/vn/document/university-of-information-technology/dai-so-tuyen-tinh/de-on-cuoi-ky-1-mon-dai-so-tuyen-tinh-dstt-2025-2026/167085052) — 3 trang bị khóa Premium; preview chữ không tương đương ảnh scan để lưu.
 - [Đề ôn giữa kỳ số 1 — ma trận và hệ phương trình](https://www.studocu.vn/vn/course/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/other/5212349/5)
 - [Đề tuyến tính/giải tích ứng dụng HK3 2021–2022](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/de-thi-dai-so-tt/96679169) — kiểm tra nội dung vì có thể khác cấu trúc MA003 hiện tại.
 - [Trang học phần MA003 — danh sách đề và tài liệu cộng đồng](https://www.studocu.vn/vn/course/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/5212349)
