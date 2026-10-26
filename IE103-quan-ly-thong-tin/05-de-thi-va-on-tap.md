@@ -2,6 +2,9 @@
 
 Danh sách cùng format cho đề thi, bài ôn và video chữa đề. Một số tài liệu được xếp vào học phần IE103 nhưng chủ đề có thể khác nội dung Quản lý thông tin.
 
+> [!WARNING]
+> **Chưa có đề cũ đáng tin cậy đúng phạm vi IE103.** Một số link bị gắn nhầm sang Quản lý dự án; chỉ dùng nếu nội dung trùng đề cương lớp.
+
 ## Đề cũ và đề ôn
 
 - Chưa tìm thấy đề thi cũ đáng tin cậy có thể xác nhận đúng phạm vi môn Quản lý thông tin.

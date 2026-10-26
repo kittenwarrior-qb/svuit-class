@@ -4,6 +4,9 @@
 
 Có **15 PDF**, đã xếp theo dạng thi và năm học trong [bộ đề MA003](de-thi/README.md): giữa kỳ, cuối kỳ, ôn tập và tài liệu cần xác minh học phần. Hai bản giữa kỳ HK1 2024–2025 được giữ lại; ảnh trang của chúng giống nhau.
 
+> [!TIP]
+> **Bắt đầu:** chọn đề giữa kỳ hoặc cuối kỳ trùng phần đã học từ [danh mục 15 PDF](de-thi/README.md). Tự giải tay rồi mới xem video; các đề nâng cao/không rõ môn cần xác minh trước khi ưu tiên.
+
 ## Nguồn đề và tài liệu trực tuyến
 
 - Giữa kỳ: [HK1 2013–2014](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin/dai-so-tuyen-tinh/de-thi-giua-ky-he-mon-dstt-nam-hoc-2013-2014/114062433), [HK1 2022–2023 — đề 1](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/de-thi-mau-giua-ky-1-mon-dstt-nam-hoc-2022-2023-de-1/76054714), [đề 1 bản khác](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/de-thi-mau-giua-ky-1-mon-dstt-nam-hoc-2022-2023-de-1/43261995), [đề 2](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin/dai-so-tuyen-tinh/de-thi-mau-giua-ky-1-mon-dstt-nam-hoc-2022-2023-de-2/106697289), [HK1 2023–2024 — đề 2](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/de-thi-mau-giua-ky-1-mon-dstt-nam-hoc-2023-2024-de-2/81032958), [HK1 2024–2025](https://www.studocu.vn/vn/document/university-of-information-technology/dai-so-tuyen-tinh/de-thi-giua-ky-mon-dstt-hk1-2024-2025/131033554), [GK1 2025–2026](https://www.studocu.vn/vn/document/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/dai-so-tuyen-tinh/de-gk1-dstt-2025-2026-de-gk1-dstt-25-26/144743509).

@@ -2,6 +2,9 @@
 
 Danh sách cùng format cho đề thi, bài ôn và tài liệu thực hành tham khảo. Nội dung sinh viên đăng có thể thuộc lớp hoặc phiên bản đề cương khác.
 
+> [!NOTE]
+> **Chưa có đề thi IE101 cũ xác thực.** Luyện subnet, sơ đồ hạ tầng và báo cáo theo đúng bài giảng/LMS; đừng xem báo cáo sinh viên là đề thi.
+
 ## Đề cũ và đề ôn
 
 - Hiện chưa tìm thấy đề thi viết cũ công khai có thể xác nhận đúng môn IE101.

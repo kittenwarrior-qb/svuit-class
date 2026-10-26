@@ -1,5 +1,8 @@
 # IT007 — Công thức và lỗi hay gặp
 
+> [!IMPORTANT]
+> **Ba dạng cần luyện tay:** vẽ Gantt và tính WT/TAT/RT; mô phỏng semaphore/Banker; dịch địa chỉ và đếm lỗi trang. Nêu giả định về hòa, quantum, I/O và số frame trước khi tính.
+
 ```text
 TAT = CT - AT
 WT = TAT - BT        (một CPU burst, bỏ I/O)

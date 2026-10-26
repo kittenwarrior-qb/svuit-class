@@ -1,5 +1,18 @@
 # IE101 — Kiến thức nền
 
+> [!TIP]
+> **Nhớ nhanh:** yêu cầu web đi qua **DNS → IP/mạng → TCP/TLS → HTTP → ứng dụng/CSDL**. Với subnet, tìm **block → network → broadcast → host**. **RAID giữ dịch vụ; backup giúp phục hồi dữ liệu**. RPO = lượng mất dữ liệu chấp nhận; RTO = thời gian phục hồi mục tiêu.
+
+### 5 ý cốt lõi
+
+- Latency là thời gian mỗi việc; throughput là lượng việc mỗi đơn vị thời gian.
+- Router chuyển giữa mạng IP; switch chuyển frame trong LAN.
+- `/p` có `2^(32−p)` địa chỉ; `/31`, `/32` là trường hợp riêng.
+- DHCP cấp cấu hình; DNS phân giải tên; TLS bảo vệ đường truyền.
+- RAID ≠ backup; luôn thử khôi phục và đặt RPO/RTO.
+
+<details><summary>Mở phần giải thích và ví dụ</summary>
+
 ## 1. Hạ tầng là gì?
 
 Hạ tầng CNTT là tài nguyên và dịch vụ làm nền cho ứng dụng: phần cứng, OS, mạng, lưu trữ, trung tâm dữ liệu, nền tảng triển khai và con người/quy trình vận hành. Khi thiết kế phải trả lời: ai dùng, tải bao nhiêu, dữ liệu quan trọng mức nào, mất dịch vụ tối đa bao lâu và ngân sách bao nhiêu?
@@ -91,3 +104,5 @@ Runbook sự cố: mô tả triệu chứng → kiểm tra phạm vi → thu b�
 Bắt đầu từ workload và SLA, không bắt đầu từ hãng thiết bị. Dung lượng dự kiến = dữ liệu hiện tại + tăng trưởng + index/log/backup + khoảng trống vận hành. Ước lượng băng thông = người dùng đồng thời × tốc độ mỗi người × hệ số dự phòng; phân biệt đồng thời và tổng tài khoản.
 
 Sơ đồ phải có client, mạng, gateway/firewall, máy chủ, storage, backup và luồng dữ liệu. Ghi giả định, giới hạn, điểm lỗi đơn, phương án phục hồi và cách đo nghiệm thu. Không cam kết RTO/RPO nếu chưa diễn tập.
+
+</details>

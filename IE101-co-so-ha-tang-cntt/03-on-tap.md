@@ -1,5 +1,8 @@
 # IE101 — Phiếu ôn tập
 
+> [!IMPORTANT]
+> **Bài tính subnet:** prefix → block → network → broadcast → host. **Bài thiết kế:** yêu cầu → sơ đồ → tính tải → rủi ro → cách kiểm thử/phục hồi.
+
 | Nhớ nhanh | Ý nghĩa / bẫy |
 |---|---|
 | Mbps / 8 = MB/s | Trần lý thuyết, chưa overhead |

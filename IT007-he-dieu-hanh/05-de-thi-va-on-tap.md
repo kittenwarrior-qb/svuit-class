@@ -2,6 +2,9 @@
 
 Đã tải **13 PDF** và phân loại theo dạng thi/năm học trong [bộ đề IT007](de-thi/README.md). Danh sách dưới đây giữ các link nguồn Studocu, trang UIT và video ôn/chữa đề. Trang Studocu có thể yêu cầu đăng nhập hoặc điều kiện tải của nền tảng.
 
+> [!TIP]
+> **Bắt đầu:** làm đề PDF theo chủ đề đã học; sau đó xem video chữa đúng dạng. Một số trang preview thiếu scan hoặc chỉ là đề thử, nên đối chiếu nội dung và quy ước thuật toán với lớp.
+
 ## Đề cũ và đề ôn
 
 - [Đề thi thử kỳ I, 65 phút (PDF 3 trang)](<de-thi/de-thi-thu/chua-ro-nam-hoc/Đề Thi Thử Kỳ I - Môn Hệ Điều Hành %2865 Phút%29.pdf>) — [nguồn Studocu](https://www.studocu.vn/vn/document/university-of-information-technology/he-dieu-hanh/hdhgk/108667419).

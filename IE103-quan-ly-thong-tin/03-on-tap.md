@@ -1,5 +1,8 @@
 # IE103 — Phiếu ôn
 
+> [!IMPORTANT]
+> **Trước khi chốt SQL:** xác định một hàng kết quả đại diện cho gì; kiểm tra JOIN nhân hàng, NULL và trường hợp không có liên hệ; chỉ thêm `ORDER BY` khi cần thứ tự.
+
 | Khái niệm | Điều cần giải thích được |
 |---|---|
 | PK / FK / candidate key | Duy nhất, tham chiếu, tối thiểu |

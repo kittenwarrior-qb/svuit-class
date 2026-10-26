@@ -1,5 +1,18 @@
 # IT007 — Kiến thức hệ điều hành
 
+> [!TIP]
+> **Nhớ nhanh:** OS quản lý **CPU, bộ nhớ, thiết bị, file**. Trọng tâm bài tính: **Gantt/lập lịch → đồng bộ/deadlock → paging/thay trang**. Phân biệt process/thread, unsafe/deadlock, page fault/TLB miss và journaling/backup.
+
+### 5 ý cốt lõi
+
+- Process có tài nguyên riêng; thread chia sẻ nhiều tài nguyên trong process.
+- Lập lịch: tính CT → TAT → WT/RT theo giả định đề.
+- Đồng bộ cần invariant và thứ tự khóa; deadlock có 4 điều kiện Coffman.
+- Paging: tách page/offset; page fault khác TLB miss.
+- FIFO/LRU/OPT khác cách chọn nạn nhân; journaling không thay backup.
+
+<details><summary>Mở phần giải thích và ví dụ</summary>
+
 ## 1. Vai trò và cấu trúc OS
 
 OS cung cấp abstraction (process, virtual memory, file) và phân phối tài nguyên (CPU, RAM, disk, thiết bị). Kernel chạy quyền đặc biệt; ứng dụng thường chạy user mode và dùng system call để yêu cầu dịch vụ. Chuyển user↔kernel mode không luôn là context switch sang tiến trình khác.
@@ -98,3 +111,5 @@ Least privilege giới hạn tác động. Quyền Linux rwx cho owner/group/oth
 Phân biệt mechanism (cơ chế kiểm soát) và policy (ai được quyền). Windows/Linux đều có process/thread, virtual memory, security và file system; khác API/công cụ/chi tiết. Không học bằng đối lập “hệ này luôn nhanh/an toàn hơn” mà thiếu workload và cấu hình.
 
 Khi debug: quan sát process/CPU/RAM/I/O, đọc thông báo lỗi, dựng ví dụ nhỏ, thay một yếu tố rồi kiểm tra lại. Mã mô phỏng Python trong kho là mô hình học thuật, không là bộ lập lịch kernel thật.
+
+</details>

@@ -1,6 +1,19 @@
 # MA003 — Kiến thức đại số tuyến tính
 
+> [!TIP]
+> **Nhớ nhanh:** khử Gauss để tìm **pivot/rank**; so `rank(A)` với `rank([A|b])` để biện luận hệ. **Cơ sở = độc lập + sinh**. `rank + nullity = số cột`. Ghi kích thước và kiểm tra đáp số bằng phép thế/nhân lại.
+
 Các ví dụ dùng trường số thực trừ khi nói khác. Ký hiệu vector là cột; A có m hàng, n cột thì A: R^n→R^m. Ghi kích thước trước phép tính giúp tránh nhiều lỗi.
+
+### 5 ý cốt lõi
+
+- Kiểm tra kích thước trước khi cộng/nhân ma trận.
+- Gauss: pivot → rank → biến tự do; hàng `[0 … 0 | c]`, `c≠0` nghĩa là vô nghiệm.
+- `det(A)≠0` ⇔ ma trận vuông khả nghịch ⇔ nghiệm duy nhất với mọi `b`.
+- Cơ sở phải độc lập **và** sinh; `rank + nullity = số cột`.
+- Trị riêng/chiếu là phần mở rộng; chỉ ưu tiên nếu đề cương yêu cầu.
+
+<details><summary>Mở phần giải thích và ví dụ</summary>
 
 ## 1. Hệ phương trình tuyến tính
 
@@ -93,3 +106,5 @@ Ví dụ fit y=a+bt cho (0,1),(1,2),(2,2): A=`[[1,0],[1,1],[1,2]]`, b=(1,2,2). A
 ## 10. Trình bày lời giải và tự kiểm tra
 
 Ghi miền/điều kiện tham số, từng phép biến đổi quan trọng và kết luận bằng lời. Kiểm tra hệ bằng thế nghiệm, nghịch đảo bằng nhân I, cơ sở bằng độc lập+sinh, ánh xạ bằng tác động lên cơ sở, trị riêng bằng Av=λv. Đáp số từ phần mềm giúp đối chiếu, không thay chứng minh.
+
+</details>

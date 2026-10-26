@@ -1,5 +1,18 @@
 # IE005 — Bản đồ ngành và phương pháp học
 
+> [!TIP]
+> **Nhớ nhanh:** CNTT giải quyết nhu cầu bằng **con người + quy trình + dữ liệu + công nghệ**. Sản phẩm đi theo vòng lặp **hiểu vấn đề → xây → kiểm thử → vận hành → cải tiến**. Luôn kiểm chứng nguồn, bảo vệ dữ liệu và ghi nhận phần tham khảo.
+
+### 5 ý cốt lõi
+
+- Một hệ thống cần công nghệ, dữ liệu, con người **và** quy trình.
+- Làm rõ vấn đề và tiêu chí đo được trước khi chọn công cụ.
+- Internet là hạ tầng; Web là một dịch vụ trên Internet.
+- Kiểm thử giảm rủi ro, không chứng minh đã hết mọi lỗi.
+- Ghi nguồn, bảo vệ dữ liệu và tự kiểm chứng đầu ra AI.
+
+<details><summary>Mở phần giải thích và ví dụ</summary>
+
 ## 1. CNTT giải quyết vấn đề gì?
 
 Một hệ thống thông tin phối hợp con người, quy trình, dữ liệu, phần mềm và hạ tầng. CNTT thiết kế, xây dựng, triển khai và vận hành những thành phần đó để đạt mục tiêu: ghi nhận giao dịch đúng, hỗ trợ quyết định, kết nối người dùng, tự động hóa công việc.
@@ -75,3 +88,5 @@ Báo cáo: vấn đề → mục tiêu → phương pháp → kết quả → gi
 Chọn mục tiêu vừa sức trong 8–12 tuần, ghi rõ sản phẩm, thước đo và thời gian. Ví dụ “xây ứng dụng thư viện nhỏ có 3 bảng, 5 truy vấn, kiểm tra dữ liệu và hướng dẫn chạy” cụ thể hơn “học hết backend”.
 
 Đánh giá hàng tuần: làm được gì không cần nhìn hướng dẫn, lỗi nào lặp, bằng chứng nào mới và nên đổi điều gì. Học rộng để hiểu hệ thống, học sâu một phần để tạo sản phẩm. Kế hoạch được phép đổi khi có bằng chứng, không cần khóa cứng vào một nghề ngay buổi đầu.
+
+</details>

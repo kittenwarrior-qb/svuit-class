@@ -2,6 +2,9 @@
 
 Danh sách cùng format cho đề thi, bài ôn và video chữa đề. Tài liệu do người học chia sẻ chỉ là tham khảo; đối chiếu LMS và yêu cầu của giảng viên trước khi ôn theo một dạng cụ thể.
 
+> [!NOTE]
+> **Chưa có đề thi IE005 cũ xác thực.** Ưu tiên yêu cầu/bài thu hoạch trên LMS; đề cương và trang học phần chỉ giúp ôn chủ đề.
+
 ## Đề cũ và đề ôn
 
 - Hiện chưa tìm thấy đề thi cũ công khai có thể xác nhận đúng môn IE005.

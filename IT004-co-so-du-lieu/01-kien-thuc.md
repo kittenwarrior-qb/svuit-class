@@ -1,6 +1,19 @@
 # IT004 — Kiến thức cơ sở dữ liệu
 
+> [!TIP]
+> **Nhớ nhanh:** thiết kế **ER → bảng → PK/FK/ràng buộc**; truy vấn bằng **SELECT/JOIN/GROUP BY**; kiểm tra phụ thuộc và chuẩn hóa; dùng transaction khi cần tính toàn vẹn. M:N thường cần bảng kết hợp.
+
 Ghi chú được biên soạn lại theo đề cương IT004 và các bài giảng/bài tập trong folder Drive. Đây là tài liệu ôn tập, không thay thế giáo trình hay nội dung lớp hiện hành.
+
+### 5 ý cốt lõi
+
+- ERD mô tả thực thể, thuộc tính, lực lượng và quy tắc nghiệp vụ.
+- M:N cần bảng kết hợp; PK nhận diện hàng, FK liên kết bảng.
+- SQL cần kiểm tra NULL, hàng trùng và điều kiện nối.
+- Chuẩn hóa giảm dư thừa; khóa/FD phải dựa trên nghiệp vụ.
+- Transaction gom thao tác cần cùng thành công hoặc cùng hoàn tác.
+
+<details><summary>Mở phần giải thích và ví dụ</summary>
 
 ## 1. Cơ sở dữ liệu và DBMS
 
@@ -54,3 +67,5 @@ ACID: nguyên tử, nhất quán, cô lập, bền vững. Mức cô lập đi�
 Mỗi bảng có khóa? Mỗi thuộc tính phụ thuộc đúng khóa? Liên kết N–N đã tách? FK và NULL có đúng ý nghĩa nghiệp vụ? Truy vấn có điều kiện nối đầy đủ? Trường hợp không có dữ liệu và NULL đã được kiểm tra? Phân rã có mất mát? Chạy lại script có thể tái tạo dữ liệu mẫu?
 
 Nguồn phạm vi: đề cương và slide/bài tập IT004 trong folder Drive; sách tham khảo *Beginning SQL* của Wilton & Colby (2005). Xem [04-tai-lieu.md](04-tai-lieu.md) để biết giới hạn niên đại và quyền sử dụng.
+
+</details>

@@ -1,5 +1,8 @@
 # Bài tập tự luyện IT004
 
+> [!IMPORTANT]
+> **Trình tự làm bài:** phác ERD → ghi PK/FK → viết SQL → thử dữ liệu biên/NULL → giải thích kết quả. Đừng xem checklist/đáp án trước khi tự làm.
+
 Hãy tự giải trước, ghi rõ giả định nghiệp vụ và cách kiểm tra kết quả. Bộ bài này được viết lại theo các dạng chủ đề trong học liệu lớp cũ.
 
 1. **ERD:** thiết kế quản lý sinh viên, môn học, lớp mở và đăng ký. Một sinh viên đăng ký nhiều lớp; một lớp có nhiều sinh viên; mỗi đăng ký lưu điểm và ngày đăng ký. Xác định lực lượng, khóa và thực thể kết hợp.

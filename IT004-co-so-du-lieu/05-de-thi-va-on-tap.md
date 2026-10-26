@@ -4,6 +4,9 @@ Danh sách đề UIT/IT004 và tài liệu luyện tập đã tìm thấy. Link 
 
 Đã tải **14 PDF** và phân loại trong [bộ đề IT004](de-thi/README.md). Drive học liệu vẫn chỉ được tham chiếu bằng link, không đưa file Drive vào bộ đề.
 
+> [!TIP]
+> **Bắt đầu:** chọn một đề có dạng đã học trong [danh mục 14 PDF](de-thi/README.md), làm trọn đề không tra cứu, rồi chữa lỗi. Kiểm tra năm, lớp và DBMS vì tài liệu có thể khác phiên bản môn.
+
 ## Đề thi và đề thực hành
 
 - [Giữa kỳ I 2024–2025, môn Cơ sở dữ liệu](https://www.studocu.vn/vn/document/university-of-information-technology/co-so-du-lieu/csdl-gk-nh2425-hk1-de-thi-giua-ky-i-2024-2025-mon-co-so-du-lieu/133216780) — Studocu có preview chữ, ghi Đề 2 và gồm 2 trang; chưa có ảnh trang gốc trong phần xem công khai.

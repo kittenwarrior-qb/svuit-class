@@ -1,5 +1,18 @@
 # IE103 — Kiến thức quản lý thông tin
 
+> [!TIP]
+> **Nhớ nhanh:** **nghiệp vụ → ERD → bảng/khóa → chuẩn hóa → SQL → giao dịch/bảo vệ**. M:N cần bảng liên kết. Truy vấn phải kiểm tra JOIN có nhân hàng không, NULL có làm đổi kết quả không, và nhóm/lọc đang đặt đúng chỗ chưa.
+
+### 5 ý cốt lõi
+
+- Mô hình dữ liệu phản ánh quy tắc nghiệp vụ, không chỉ dữ liệu mẫu.
+- M:N chuyển thành bảng liên kết; PK định danh, FK giữ tham chiếu.
+- Dùng phụ thuộc hàm/khóa để phân tích chuẩn hóa.
+- SQL cần kiểm tra JOIN, NULL, `WHERE/HAVING` và mức hạt kết quả.
+- Transaction bảo vệ tính nhất quán; backup dùng cho phục hồi.
+
+<details><summary>Mở phần giải thích và ví dụ</summary>
+
 ## 1. Vòng đời và chất lượng thông tin
 
 Vòng đời: thu thập → xác thực/làm sạch → mô hình hóa → lưu trữ → xử lý/truy vấn → trình bày/chia sẻ → lưu trữ dài hạn/hủy theo chính sách. Cần biết chủ sở hữu, nguồn, quyền truy cập và mục đích của dữ liệu.
@@ -120,3 +133,5 @@ CSDL phân tán đặt dữ liệu trên nhiều nút. Phân mảnh ngang chia h
 NoSQL: key-value cho tra cứu theo khóa; document cho tài liệu lồng; wide-column cho các mẫu truy cập phù hợp; graph cho quan hệ và duyệt đồ thị. “Schema linh hoạt” vẫn cần quy ước và validation. Một hệ có thể hỗ trợ nhiều mô hình và transaction; không nói mọi NoSQL đều không có ACID/JOIN.
 
 Chọn mô hình từ truy vấn, quy tắc nhất quán, tải, tăng trưởng và chi phí vận hành. Dữ liệu nghiệp vụ cần giao dịch quan hệ có thể kết hợp object storage cho file và search index cho tìm kiếm; phải chỉ rõ nguồn sự thật và cách đồng bộ.
+
+</details>

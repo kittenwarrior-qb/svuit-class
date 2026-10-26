@@ -1,5 +1,8 @@
 # IE005 — Phiếu ôn
 
+> [!IMPORTANT]
+> **Ôn miệng nhanh:** mô tả một hệ thống bằng 4 thành phần (**người, quy trình, dữ liệu, công nghệ**); nêu vòng đời sản phẩm; đưa ví dụ nghề nghiệp và tiêu chí đo được.
+
 Tự nói trong 2 phút cho từng câu:
 
 - Một hệ thống thông tin gồm gì? Công nghệ liên hệ con người/quy trình ra sao?

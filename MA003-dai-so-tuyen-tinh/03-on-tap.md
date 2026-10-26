@@ -1,5 +1,8 @@
 # MA003 — Phiếu công thức
 
+> [!IMPORTANT]
+> **Quy trình giải:** ghi kích thước/điều kiện → khử Gauss → đọc pivot/biến tự do → kết luận → thế lại kiểm tra. Với không gian con/cơ sở, phải chứng minh điều kiện chứ không chỉ đếm vector.
+
 | Chủ đề | Công thức / điều kiện |
 |---|---|
 | Có nghiệm | rank A = rank[A|b] |
