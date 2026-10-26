@@ -20,5 +20,6 @@ Mục tiêu: giải hệ, tính toán ma trận/định thức, tìm cơ sở v�
 - [Phiếu công thức](03-on-tap.md)
 - [Nguồn học](04-tai-lieu.md)
 - [Đề thi và ôn tập](05-de-thi-va-on-tap.md)
+- [Bộ PDF đề thi đã tải — phân loại theo kỳ và năm học](de-thi/README.md)
 - [Lab Gauss với phân số chính xác](thuc-hanh/README.md)
 - [Học liệu lớp](tai-lieu-lop/README.md)

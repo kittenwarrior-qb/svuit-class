@@ -7,5 +7,4 @@ __pycache__/
 *.db
 *.sqlite*
 ket-qua-ca-nhan/
-**/tai-lieu-lop/*
-!**/tai-lieu-lop/README.md
+**/tai-lieu-lop/Drive*
