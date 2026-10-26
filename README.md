@@ -22,7 +22,7 @@ Tài liệu tự học tiếng Việt cho **IE005, IE101, IE103, IT004, IT007, M
 
 ## Ảnh đề thi hiện có
 
-Tổng cộng **9 ảnh trang đề** hiện có trong repo: IT007 có 4 trang và IT004 có 5 trang. Ba bộ ảnh MA003 trước đây đã được gỡ khỏi working tree; môn này hiện có [15 PDF đề và ôn tập được phân loại theo kỳ/năm học](MA003-dai-so-tuyen-tinh/de-thi/README.md). IE005, IE101 và IE103 hiện chưa có ảnh đề trong kho. IT004 được chuyển từ hai PDF đã có trong thư mục học liệu local; IT007 lấy từ trang preview công khai đã lưu ở môn.
+Hiện repo không còn lưu ảnh trang đề; các bộ đề đã được phân loại dưới dạng PDF cho MA003, IT004 và IT007. IT007 hiện có [13 PDF đã phân loại theo kỳ/năm học](IT007-he-dieu-hanh/de-thi/README.md), MA003 có [15 PDF](MA003-dai-so-tuyen-tinh/de-thi/README.md). IE005, IE101 và IE103 hiện chưa có ảnh đề trong kho.
 
 Lịch trên được chép từ ảnh người học cung cấp, **ảnh không ghi năm**. Không tự gán năm 2026 cho lịch này; xác nhận lịch hiện hành trên LMS. Tổng cộng 15 tín chỉ, 40 buổi theo ảnh.
 
