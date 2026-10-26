@@ -1,5 +1,7 @@
 # MA003 — Bộ PDF đề thi đã tải
 
+- [Lời giải tự biên soạn: đề giữa kỳ GK1 2025–2026](loi-giai/MA003-GK1-2025-2026.md).
+
 Có **15 file PDF** được chia theo dạng thi, năm học và mức độ chắc chắn của phân loại. Các đề không ghi rõ năm được để riêng; tài liệu có thể thuộc học phần khác cũng được tách ra để bạn kiểm tra trước khi ôn theo MA003.
 
 ## Giữa kỳ — 9 PDF

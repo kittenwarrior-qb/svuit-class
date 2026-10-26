@@ -4,6 +4,8 @@
 
 Có **15 PDF**, đã xếp theo dạng thi và năm học trong [bộ đề MA003](de-thi/README.md): giữa kỳ, cuối kỳ, ôn tập và tài liệu cần xác minh học phần. Hai bản giữa kỳ HK1 2024–2025 được giữ lại; ảnh trang của chúng giống nhau.
 
+- [Lời giải chi tiết — GK1 2025–2026](de-thi/loi-giai/MA003-GK1-2025-2026.md) · tự biên soạn theo PDF một trang trong kho.
+
 > [!TIP]
 > **Bắt đầu:** chọn đề giữa kỳ hoặc cuối kỳ trùng phần đã học từ [danh mục 15 PDF](de-thi/README.md). Tự giải tay rồi mới xem video; các đề nâng cao/không rõ môn cần xác minh trước khi ưu tiên.
 
