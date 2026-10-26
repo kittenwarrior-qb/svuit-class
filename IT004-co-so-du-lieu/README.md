@@ -9,5 +9,6 @@ Môn thứ sáu trong danh sách hiện tại. Tài liệu nguồn nằm trong `
 3. [Bài tập tự luyện và checklist](03-bai-tap-on-tap.md)
 4. [Nguồn, phạm vi và thời điểm tài liệu](04-tai-lieu.md)
 5. [Đề thi, đề ôn và tài liệu luyện tập](05-de-thi-va-on-tap.md)
+6. [Bộ PDF đề thi đã tải — phân loại theo kỳ và năm học](de-thi/README.md)
 
 Nguồn Drive được người học cung cấp: [folder IT004](https://drive.google.com/drive/folders/1lKEm-LJrxY0QrZvvxx0gpiCslhTEv3aJ). Học liệu trong folder thuộc các học kỳ 2022–2024; cần đối chiếu đề cương và yêu cầu hiện hành của giảng viên.

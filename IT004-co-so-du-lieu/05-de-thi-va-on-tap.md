@@ -2,6 +2,8 @@
 
 Danh sách đề UIT/IT004 và tài liệu luyện tập đã tìm thấy. Link Studocu là trang nguồn; chỉ lưu ảnh khi trang hiển thị đầy đủ và quyền truy cập cho phép.
 
+Đã tải **14 PDF** và phân loại trong [bộ đề IT004](de-thi/README.md). Drive học liệu vẫn chỉ được tham chiếu bằng link, không đưa file Drive vào bộ đề.
+
 ## Đề thi và đề thực hành
 
 - [Giữa kỳ I 2024–2025, môn Cơ sở dữ liệu](https://www.studocu.vn/vn/document/university-of-information-technology/co-so-du-lieu/csdl-gk-nh2425-hk1-de-thi-giua-ky-i-2024-2025-mon-co-so-du-lieu/133216780) — Studocu có preview chữ, ghi Đề 2 và gồm 2 trang; chưa có ảnh trang gốc trong phần xem công khai.
@@ -23,12 +25,9 @@ Danh sách đề UIT/IT004 và tài liệu luyện tập đã tìm thấy. Link 
 - [Trang bài tập thực hành IT004 trên Studocu](https://www.studocu.vn/vn/course/truong-dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/co-so-du-lieu/practice-materials/5735876/4) — có bài thực hành, đề mẫu và đáp án do người học chia sẻ.
 - Bộ bài giảng và thực hành trên máy cá nhân nằm trong `tai-lieu-lop/`; [nguồn Drive](https://drive.google.com/drive/folders/1lKEm-LJrxY0QrZvvxx0gpiCslhTEv3aJ). Các file này đang được Git bỏ qua và không được tải lên repo.
 
-## Ảnh đề đã lưu
+## PDF đã tải
 
-- [Đề thực hành HK1 2017–2018, mã đề 04 (2 trang)](de-thi/DE_THI_THUC_HANH_IT004_MA_DE_04_HK1_2017-2018/README.md) — chuyển ảnh từ bản PDF có sẵn trong thư mục tài liệu lớp.
-- [Đề thực hành HK1 2021–2022, mã đề 01 (3 trang)](de-thi/DE_THI_THUC_HANH_IT004_DE_01_HK1_2021-2022/README.md) — chuyển ảnh từ bản PDF có sẵn trong thư mục tài liệu lớp.
-
-> Ghi chú: Các trang Studocu chỉ hiện preview văn bản hoặc yêu cầu quyền tải; ảnh trên được tạo từ hai PDF sẵn có trong `tai-lieu-lop`, không phải từ phần nội dung Studocu bị khóa.
+Danh mục [14 PDF IT004](de-thi/README.md) gồm đề thi giữa kỳ, cuối kỳ, đáp án, thực hành và ôn tập. Các ảnh trang đề cũ không còn trong working tree hiện tại.
 
 ## Cách dùng và giới hạn
 
