@@ -5,10 +5,14 @@ Môn thứ sáu trong danh sách hiện tại. Tài liệu nguồn nằm trong `
 ## Học theo thứ tự
 
 1. [Kiến thức nền và mô hình dữ liệu](01-kien-thuc.md)
-2. [Thực hành SQL Server](02-thuc-hanh-sql-server.md)
-3. [Bài tập tự luyện và checklist](03-bai-tap-on-tap.md)
-4. [Nguồn, phạm vi và thời điểm tài liệu](04-tai-lieu.md)
-5. [Đề thi, đề ôn và tài liệu luyện tập](05-de-thi-va-on-tap.md)
-6. [Bộ PDF đề thi đã tải — phân loại theo kỳ và năm học](de-thi/README.md)
+2. [Bài tập tự luyện và checklist](03-bai-tap-on-tap.md)
+3. [Thực hành SQL Server](02-thuc-hanh-sql-server.md) — làm sau khi nắm bảng, khóa và truy vấn.
+4. [Ôn đề và nguồn đề](05-de-thi-va-on-tap.md)
+5. [Bộ 14 PDF đề đã phân loại](de-thi/README.md)
+
+> [!TIP]
+> **Vòng học:** ERD → PK/FK → SQL → kiểm tra dữ liệu biên/NULL → tự làm đề → ghi và chữa lỗi.
+
+[04 — Nguồn, phạm vi và niên đại tài liệu](04-tai-lieu.md)
 
 Nguồn Drive được người học cung cấp: [folder IT004](https://drive.google.com/drive/folders/1lKEm-LJrxY0QrZvvxx0gpiCslhTEv3aJ). Học liệu trong folder thuộc các học kỳ 2022–2024; cần đối chiếu đề cương và yêu cầu hiện hành của giảng viên.

@@ -4,6 +4,17 @@
 
 Có **15 file PDF** được chia theo dạng thi, năm học và mức độ chắc chắn của phân loại. Các đề không ghi rõ năm được để riêng; tài liệu có thể thuộc học phần khác cũng được tách ra để bạn kiểm tra trước khi ôn theo MA003.
 
+## Bắt đầu ôn theo thứ tự
+
+| Bước | Đề | Trạng thái |
+|---|---|---|
+| **1 · Làm trước** | [GK1 2025–2026 — PDF gốc](<giua-ky/2025-2026/ĐỀ THI GIỮA KỲ MÔN ĐẠI SỐ TT - GK1 2025-2026.pdf>) | Có [lời giải đủ 4 câu](loi-giai/MA003-GK1-2025-2026.md) |
+| **2 · Luyện lại** | [Giữa kỳ HK1 2024–2025](<giua-ky/2024-2025/Đề thi giữa kỳ môn DSTT HK1 2024 - 2025.pdf>) | Chưa giải trong kho |
+| **3 · Luyện thêm** | Chọn một đề giữa kỳ 2023–2024 hoặc 2022–2023 trong danh sách dưới | Chưa giải trong kho |
+| **4 · Sau khi học hết phần** | Chọn đề cuối kỳ gần nhất | Chưa giải trong kho |
+
+**Một lượt luyện:** làm PDF không nhìn lời giải → tự chấm → đọc bước mình sai → làm lại câu đó sau 1 ngày. Các đề ở nhóm “cần xác minh” không dùng làm chuẩn đề cương.
+
 ## Giữa kỳ — 9 PDF
 
 | Năm học | Tài liệu | Số trang |

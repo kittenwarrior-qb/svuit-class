@@ -2,6 +2,13 @@
 
 [Về danh mục](../README.md) · 4 TC · 10 buổi theo ảnh · Giảng viên: Nguyễn Thành Luân.
 
+## Học theo thứ tự
+
+1. [01 — Kiến thức](01-kien-thuc.md): đọc khung **5 ý cốt lõi**.
+2. [02 — Bài tập](02-bai-tap.md): tự vẽ ERD, chuẩn hóa và viết SQL.
+3. [03 — Phiếu ôn](03-on-tap.md): tự kiểm tra JOIN, NULL, khóa và transaction.
+4. [05 — Ôn tập/nguồn đề](05-de-thi-va-on-tap.md): đề xác thực còn thiếu; kiểm tra đúng nội dung môn trước khi dùng link.
+
 Mục tiêu: biến yêu cầu thành mô hình dữ liệu; truy vấn đúng; bảo vệ tính nhất quán; giải thích lựa chọn lưu trữ và trình bày thông tin. Đề cương công khai của UIT được dùng để đối chiếu nhóm chủ đề, chưa xác nhận phiên bản G12. Kiến thức CSDL quan hệ/IT004 là nền quan trọng.
 
 | Buổi tự học | Nội dung | Sản phẩm |
@@ -17,12 +24,8 @@ Mục tiêu: biến yêu cầu thành mô hình dữ liệu; truy vấn đúng; 
 | 9 | Menu, form, report | Đặc tả giao diện/báo cáo |
 | 10 | CSDL hướng đối tượng, phân tán, NoSQL | So sánh thiết kế tổng hợp |
 
-- [Kiến thức](01-kien-thuc.md)
-- [Bài tập và đáp án](02-bai-tap.md)
-- [Ôn tập](03-on-tap.md)
-- [Nguồn](04-tai-lieu.md)
-- [Đề thi và ôn tập](05-de-thi-va-on-tap.md)
-- [Lab SQL và XML](thuc-hanh/README.md)
-- [Học liệu lớp](tai-lieu-lop/README.md)
+## Tài liệu mở rộng
+
+[04 — Nguồn](04-tai-lieu.md) · [Lab SQL/XML](thuc-hanh/README.md) · [Học liệu lớp](tai-lieu-lop/README.md)
 
 Lab dùng SQLite trong RAM để chạy ngay bằng Python. SQLite không có đầy đủ stored procedure, phân quyền người dùng và ngôn ngữ server như PostgreSQL/SQL Server; phần tương ứng có hướng dẫn riêng, không giả vờ tương đương các DBMS.

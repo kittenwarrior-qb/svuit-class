@@ -2,6 +2,13 @@
 
 [Về danh mục](../README.md) · 3 TC · 8 buổi theo ảnh · Giảng viên: Võ Phương Bình.
 
+## Học theo thứ tự
+
+1. [01 — Kiến thức](01-kien-thuc.md): bắt đầu bằng khung **5 ý cốt lõi**.
+2. [02 — Bài tập](02-bai-tap.md): tính subnet và giải thích luồng mạng.
+3. [03 — Phiếu ôn](03-on-tap.md): tự vẽ đường đi HTTPS và subnet.
+4. [05 — Ôn tập/nguồn đề](05-de-thi-va-on-tap.md): chưa có đề thi cũ xác thực; bám bài tập/LMS.
+
 Mục tiêu tự học: mô tả được đường đi của một yêu cầu web từ máy người dùng đến máy chủ; lựa chọn tài nguyên máy tính, mạng và lưu trữ; tính subnet; giải thích phương án sao lưu, bảo mật và vận hành cơ bản. Phạm vi dưới đây là khung nền tảng đề xuất, cần đối chiếu đề cương lớp.
 
 | Buổi tự học | Nội dung | Sản phẩm |
@@ -15,10 +22,6 @@ Mục tiêu tự học: mô tả được đường đi của một yêu cầu w
 | 7 | Bảo mật, giám sát, sự cố | Checklist và runbook |
 | 8 | Capacity, thiết kế tổng hợp | Thiết kế hạ tầng phòng học |
 
-- [Kiến thức](01-kien-thuc.md)
-- [Bài tập và lời giải](02-bai-tap.md)
-- [Ôn tập](03-on-tap.md)
-- [Nguồn học](04-tai-lieu.md)
-- [Đề thi và ôn tập](05-de-thi-va-on-tap.md)
-- [Lab](thuc-hanh/README.md)
-- [Bổ sung tài liệu lớp](tai-lieu-lop/README.md)
+## Tài liệu mở rộng
+
+[04 — Nguồn học](04-tai-lieu.md) · [Lab](thuc-hanh/README.md) · [Tài liệu lớp](tai-lieu-lop/README.md)
