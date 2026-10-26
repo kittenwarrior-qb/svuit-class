@@ -2,26 +2,15 @@
 
 [Về danh mục](../README.md) · 3 TC · 8 buổi theo ảnh · Giảng viên: Võ Phương Bình.
 
-## Học theo thứ tự
+## Bắt đầu ở đây
 
-1. [01 — Kiến thức](01-kien-thuc.md): bắt đầu bằng khung **5 ý cốt lõi**.
-2. [02 — Bài tập](02-bai-tap.md): tính subnet và giải thích luồng mạng.
-3. [03 — Phiếu ôn](03-on-tap.md): tự vẽ đường đi HTTPS và subnet.
-4. [05 — Ôn tập/nguồn đề](05-de-thi-va-on-tap.md): chưa có đề thi cũ xác thực; bám bài tập/LMS.
+> Học theo một luồng xuyên suốt: **một user mở web app → request đi qua hạ tầng → quan sát, bảo vệ và khôi phục hệ thống**. Tên khái niệm và acronym được giữ bằng English; nghĩa được giải thích ngay tại chỗ.
 
-Mục tiêu tự học: mô tả được đường đi của một yêu cầu web từ máy người dùng đến máy chủ; lựa chọn tài nguyên máy tính, mạng và lưu trữ; tính subnet; giải thích phương án sao lưu, bảo mật và vận hành cơ bản. Phạm vi dưới đây là khung nền tảng đề xuất, cần đối chiếu đề cương lớp.
+1. **Nắm bản đồ:** [IE101 Field Notes — mục lục, sơ đồ tổng quan và kế hoạch học](notes/README.md).
+2. **Đọc theo thứ tự:** [Computer systems](notes/01-computer-systems.md) → [Networking](notes/02-networking.md) → [Infrastructure services](notes/03-infrastructure-services.md) → [Virtualization, containers & cloud](notes/04-virtualization-containers-cloud.md) → [Security, operations & design](notes/05-security-operations-design.md).
+3. **Tra viết tắt:** [IE101 acronym glossary](notes/06-acronym-glossary.md).
+4. **Làm lab:** [Hands-on labs](thuc-hanh/README.md) → [bài tập](02-bai-tap.md) → [phiếu ôn](03-on-tap.md) → [đề và ôn tập](05-de-thi-va-on-tap.md).
 
-| Buổi tự học | Nội dung | Sản phẩm |
-|---|---|---|
-| 1 | Thành phần hạ tầng, phần cứng | Sơ đồ máy trạm/máy chủ và bảng tài nguyên |
-| 2 | OS, tài khoản, dịch vụ | Quan sát tiến trình và tài nguyên |
-| 3 | Ethernet, IP, subnet | Chia mạng bằng tay |
-| 4 | DHCP, DNS, web, TLS | Giải thích một lần truy cập web |
-| 5 | Lưu trữ, RAID, backup | Kế hoạch phục hồi |
-| 6 | Máy ảo, container, cloud | So sánh ba cách triển khai |
-| 7 | Bảo mật, giám sát, sự cố | Checklist và runbook |
-| 8 | Capacity, thiết kế tổng hợp | Thiết kế hạ tầng phòng học |
+## Tài liệu lớp và nguồn tham khảo
 
-## Tài liệu mở rộng
-
-[04 — Nguồn học](04-tai-lieu.md) · [Lab](thuc-hanh/README.md) · [Tài liệu lớp](tai-lieu-lop/README.md)
+[Đề cương lớp](tai-lieu-lop/README.md) · [Nguồn học chính thức/mở](04-tai-lieu.md). Các ghi chú mở rộng là study notes để hiểu và thực hành; nội dung kiểm tra chính thức vẫn theo đề cương, giảng viên và LMS của lớp.
