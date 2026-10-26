@@ -7,7 +7,7 @@
 > Học theo một luồng xuyên suốt: **một user mở web app → request đi qua hạ tầng → quan sát, bảo vệ và khôi phục hệ thống**. Tên khái niệm và acronym được giữ bằng English; nghĩa được giải thích ngay tại chỗ.
 
 1. **Nắm bản đồ:** [IE101 Field Notes — mục lục, sơ đồ tổng quan và kế hoạch học](notes/README.md).
-2. **Đọc theo thứ tự:** [Computer systems](notes/01-computer-systems.md) → [Networking](notes/02-networking.md) → [Infrastructure services](notes/03-infrastructure-services.md) → [Virtualization, containers & cloud](notes/04-virtualization-containers-cloud.md) → [Security, operations & design](notes/05-security-operations-design.md).
+2. **Đọc theo trình tự lịch sử rồi đến kỹ thuật:** [History timeline](notes/00-history-computing-ui-internet.md) → [Computer systems](notes/01-computer-systems.md) → [Networking](notes/02-networking.md) → [Infrastructure services](notes/03-infrastructure-services.md) → [Virtualization, containers & cloud](notes/04-virtualization-containers-cloud.md) → [Security, operations & design](notes/05-security-operations-design.md).
 3. **Tra viết tắt:** [IE101 acronym glossary](notes/06-acronym-glossary.md).
 4. **Làm lab:** [Hands-on labs](thuc-hanh/README.md) → [bài tập](02-bai-tap.md) → [phiếu ôn](03-on-tap.md) → [đề và ôn tập](05-de-thi-va-on-tap.md).
 

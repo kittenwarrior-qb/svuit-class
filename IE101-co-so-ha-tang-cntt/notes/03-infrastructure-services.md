@@ -1,45 +1,45 @@
-# 03 — Infrastructure Services: DNS, DHCP, Web, Storage
+# 03 — Infrastructure Services: DNS, DHCP, Web & Storage
 
-⭐ **Core idea:** services depend on other services. Debug the dependency chain from the client outward instead of assuming “the server” is one thing.
+> ⭐ **Ý chính:** các service phụ thuộc lẫn nhau. Hãy debug dependency chain từ client ra ngoài, đừng xem “server” như một thành phần duy nhất.
 
-## 1. DNS: names to records
+## 1. DNS: phân giải tên thành record
 
-**DNS (Domain Name System)** is a distributed naming system. A stub resolver asks a recursive resolver; the resolver may use cache or query authoritative DNS. DNS records are not all “IP records.”
+**DNS (Domain Name System)** là hệ thống tên phân tán. **Stub resolver** trên thiết bị hỏi **recursive resolver**; resolver có thể trả từ cache hoặc truy vấn **authoritative DNS**. DNS có nhiều loại record, không chỉ có IP.
 
-| Record | Purpose |
+| Record | Công dụng |
 |---|---|
-| **A** | Name to IPv4 address. |
-| **AAAA** | Name to IPv6 address. |
-| **CNAME** | Alias to another canonical name. |
-| **MX** | Mail exchanger for a domain. |
-| **NS** | Delegated authoritative name server. |
-| **TXT** | Text data used by multiple protocols/policies. |
+| **A** | Tên → địa chỉ IPv4. |
+| **AAAA** | Tên → địa chỉ IPv6. |
+| **CNAME** | Tên bí danh trỏ tới canonical name khác. |
+| **MX** | Mail exchanger của domain. |
+| **NS** | Name server có authority cho zone/delegation. |
+| **TXT** | Dữ liệu text dùng trong nhiều policy/protocol. |
 
-**TTL (Time to Live)** controls how long a DNS answer can be cached. Lowering TTL shortly before a change does not erase already-cached answers; wait for old TTLs where required. DNS commonly uses UDP and also TCP in defined cases (for example, larger responses or zone transfers).
+**TTL (Time to Live)** quy định thời gian cache câu trả lời. Giảm TTL ngay trước khi đổi DNS không xóa cache đã lưu; có thể cần đợi TTL cũ hết hạn. DNS thường dùng UDP, nhưng cũng dùng TCP trong một số trường hợp quy định (ví dụ response lớn hoặc zone transfer).
 
 ```mermaid
 sequenceDiagram
   participant C as Client / stub resolver
   participant R as Recursive resolver
   participant A as Authoritative DNS
-  C->>R: Query A/AAAA for app.example
-  alt Cache hit
-    R-->>C: Cached answer before TTL expires
+  C->>R: Query A/AAAA cho app.example
+  alt Có trong cache
+    R-->>C: Trả answer đã cache còn hạn
   else Cache miss
-    R->>A: Find authoritative answer
+    R->>A: Tìm answer từ máy có thẩm quyền
     A-->>R: Record + TTL
-    R-->>C: Answer + remaining TTL
+    R-->>C: Answer + TTL còn lại
   end
-  C->>C: Connect to selected address
+  C->>C: Kết nối đến địa chỉ nhận được
 ```
 
-## 2. DHCP: automatic host configuration
+## 2. DHCP: tự động cấu hình host
 
-**DHCP (Dynamic Host Configuration Protocol)** commonly supplies an address, prefix/mask, default gateway, DNS resolver, and lease time. DHCPv4’s familiar DORA sequence is Discover → Offer → Request → Acknowledge. A DHCP relay forwards requests across routed networks; keep scopes non-overlapping and reserve static infrastructure addresses deliberately.
+**DHCP (Dynamic Host Configuration Protocol)** thường cấp IP, prefix/mask, default gateway, DNS resolver và lease time. Trình tự DHCPv4 thường học là **DORA**: Discover → Offer → Request → Acknowledge. **DHCP relay** chuyển tiếp yêu cầu qua router sang subnet khác; scope không được chồng lấn và IP hạ tầng tĩnh cần được reserve rõ ràng.
 
-⚠️ A valid address does not guarantee correct gateway or DNS. Compare the full configuration with the intended subnet/VLAN.
+⚠️ IP hợp lệ chưa chắc gateway/DNS đúng. So sánh toàn bộ cấu hình với VLAN/subnet dự kiến.
 
-## 3. One HTTPS request, end to end
+## 3. Một HTTPS request từ đầu đến cuối
 
 ```mermaid
 sequenceDiagram
@@ -49,58 +49,58 @@ sequenceDiagram
   participant A as Application
   participant DB as Database / cache
   B->>D: Resolve app.example
-  D-->>B: Address (A/AAAA)
-  B->>E: TCP or QUIC connection to service
-  B->>E: TLS handshake; validate certificate and name
-  B->>E: HTTP request with Host/path/headers
-  E->>A: Route request; apply health/load policy
-  A->>DB: Query or update data
-  DB-->>A: Result
+  D-->>B: Địa chỉ A/AAAA
+  B->>E: Kết nối TCP hoặc QUIC
+  B->>E: TLS handshake; kiểm tra certificate và hostname
+  B->>E: HTTP request: host/path/headers
+  E->>A: Route request; áp dụng health/load policy
+  A->>DB: Query hoặc ghi dữ liệu
+  DB-->>A: Kết quả
   A-->>E: HTTP response
   E-->>B: Status, headers, body
 ```
 
-- **HTTP (Hypertext Transfer Protocol)** defines request/response semantics. HTTP/1.1 and HTTP/2 are commonly carried over TCP; HTTP/3 uses QUIC over UDP.
-- **TLS (Transport Layer Security)** authenticates the server (and optionally client), negotiates cryptographic protection, and protects data in transit when correctly configured.
-- **Certificate validation** checks trust chain, validity, and that the requested name matches. Encryption alone does not make an application safe or private from its endpoint.
-- **Reverse proxy** accepts client requests and forwards to application servers; it may terminate TLS, route by hostname/path, and enforce limits.
-- **Load balancer** distributes work across healthy backends; health checks must represent actual readiness, not merely “process exists.”
-- **Web server** may serve static assets and/or proxy dynamic requests. **Application server** executes business logic. **Database** stores structured state and supports queries/transactions. These roles may be combined in a small lab.
+- **HTTP (Hypertext Transfer Protocol)** quy định request/response. HTTP/1.1 và HTTP/2 thường dùng TCP; HTTP/3 dùng QUIC trên UDP.
+- **TLS (Transport Layer Security)** xác thực server (và tùy chọn client), thương lượng mã hóa và bảo vệ dữ liệu truyền nếu cấu hình đúng.
+- **Certificate validation** kiểm tra trust chain, thời hạn và tên truy cập có khớp không. Có encryption không chứng minh app không có lỗ hổng.
+- **Reverse proxy** nhận request phía client rồi chuyển tiếp tới application server; có thể terminate TLS, route theo host/path, giới hạn request.
+- **Load balancer** phân phối tải tới backend khỏe mạnh. Health check cần kiểm tra readiness có ý nghĩa, không chỉ “process đang chạy”.
+- **Web server** phục vụ static file và/hoặc proxy request động. **Application server** chạy business logic. **Database** lưu state có cấu trúc, query và transaction. Lab nhỏ có thể gộp nhiều vai trò chung máy.
 
-## 4. Storage: block, file, and object
+## 4. Storage: block, file, object
 
-| Model | What the client sees | Common use | Key consideration |
+| Model | Client nhìn thấy | Dùng thường gặp | Điều cần nhớ |
 |---|---|---|---|
-| **Block storage** | Raw volume/device blocks | OS disk, VM disk, database volume | Filesystem and consistency are managed above the block device. |
-| **File storage** | Named directories/files | Shared folders, home directories | Permissions, locking, metadata, and network availability matter. |
-| **Object storage** | Objects addressed by keys with metadata | Media, archives, backups, static content | API semantics differ from a normal mounted filesystem. |
-| **DAS / NAS / SAN** | Direct-attached / network file / network block storage | Host-local / shared files / shared block | Labels describe access architecture, not backup guarantees. |
+| **Block storage** | Volume/device dạng block | OS disk, VM disk, database volume | Filesystem và consistency do lớp trên quản lý. |
+| **File storage** | File/folder có tên | Shared folder, home directory | Permission, lock, metadata và network availability. |
+| **Object storage** | Object theo key kèm metadata | Ảnh, archive, backup, static content | API khác filesystem thông thường. |
+| **DAS / NAS / SAN** | Direct-attached / network file / network block | Local host / chia sẻ file / chia sẻ block | Mô tả kiểu truy cập, không khẳng định đã có backup. |
 
-### RAID is availability, not backup
+### RAID đảm bảo availability, không thay backup
 
-| Level | Approx. usable capacity for `n` equal drives of size `S` | Typical drive-failure property | Main caveat |
+| RAID | Dung lượng gần đúng với `n` ổ đều cỡ `S` | Khả năng chịu lỗi ổ | Điểm cần lưu ý |
 |---|---:|---|---|
-| RAID 0 | `nS` | None | Any member failure can lose the array. |
-| RAID 1 | `S` for a two-drive mirror | One member can fail | Deletion/corruption is mirrored too. |
-| RAID 5 | `(n−1)S`, `n≥3` | One member | Rebuild and a second failure are risks. |
-| RAID 6 | `(n−2)S`, `n≥4` | Two members | Rebuild/time/capacity cost. |
-| RAID 10 | `nS/2`, even `n≥4` | Depends on mirror pairs | Multiple failures may be survivable only if in different pairs. |
+| 0 | `nS` | Không chịu lỗi | Hỏng một ổ có thể mất cả mảng. |
+| 1 | `S` với cặp 2 ổ | Một ổ trong cặp | Xóa/sửa nhầm vẫn được mirror. |
+| 5 | `(n−1)S`, `n≥3` | Một ổ | Rebuild và lỗi ổ thứ hai là rủi ro. |
+| 6 | `(n−2)S`, `n≥4` | Hai ổ | Tốn dung lượng và thời gian rebuild. |
+| 10 | `nS/2`, n chẵn ≥4 | Tùy cặp mirror | Có thể chịu nhiều ổ nếu chúng không cùng cặp. |
 
-## 5. Backup and restore engineering
+## 5. Backup và phục hồi
 
-- **Backup** is a recoverable copy protected from the failure modes of production. Separate credentials and failure domains matter.
-- **Snapshot** is a point-in-time view, often on the same storage system; a snapshot alone may not survive system/account/site loss.
-- **Full / incremental / differential**: copy everything / changes since prior backup / changes since last full backup.
-- **3-2-1 rule**: keep 3 copies, across 2 media/types, with 1 off-site (adapt for threat model; immutable/offline copies help against ransomware).
-- **RPO (Recovery Point Objective)**: maximum acceptable data loss measured in time. **RTO (Recovery Time Objective)**: target duration to restore service.
-- A backup is not proven until a restore has been tested and verified. Include credentials, keys, dependencies, application consistency, and recovery ordering.
+- **Backup** là bản sao có thể phục hồi và được bảo vệ khỏi các lỗi của production. Phân tách credential và failure domain rất quan trọng.
+- **Snapshot** là góc nhìn dữ liệu tại một thời điểm, thường vẫn phụ thuộc cùng hệ thống storage; snapshot đơn lẻ có thể không sống sót khi mất cả account/site.
+- **Full / incremental / differential:** sao toàn bộ / thay đổi từ lần sao gần nhất / thay đổi từ full gần nhất.
+- **Quy tắc 3-2-1:** 3 bản sao, 2 loại thiết bị/phương tiện, 1 bản ngoài site chính. Tùy threat model mà thêm immutable/offline copy chống ransomware.
+- **RPO (Recovery Point Objective):** lượng mất dữ liệu tối đa chấp nhận, đo theo thời gian. **RTO (Recovery Time Objective):** thời gian mục tiêu để khôi phục dịch vụ.
+- Chỉ chứng minh được backup khi đã thử restore và xác minh. Tính cả credential, key, dependency, consistency của ứng dụng và thứ tự khôi phục.
 
-🧪 Example: hourly recovery points may support an RPO near one hour only if successful copies are frequent and monitored. A two-hour RTO must include detection, provisioning, data restore, dependency startup, and validation—not just copy speed.
+🧪 Ví dụ: recovery point mỗi giờ chỉ hỗ trợ RPO gần một giờ nếu bản sao chạy thành công thường xuyên và được giám sát. RTO hai giờ phải tính phát hiện sự cố, cấp máy, restore data, mở dependency và kiểm tra dịch vụ—không chỉ tốc độ copy.
 
-## Retrieval questions
+## Câu hỏi tự nhớ
 
-1. Trace what happens from entering a URL to seeing a page; name at least five failure points.
-2. Why may a DNS change appear inconsistent across users?
-3. Explain why TLS does not prove an app is vulnerability-free.
-4. Which storage model would you select for a VM disk, team share, and image archive?
-5. Design a restore test that demonstrates an RPO and RTO rather than merely checking that a backup file exists.
+1. Kể đường đi từ nhập URL tới trang web; nêu ít nhất 5 điểm có thể hỏng.
+2. Vì sao người dùng khác nhau có thể thấy DNS answer khác nhau?
+3. Vì sao TLS không chứng minh app không có vulnerability?
+4. Chọn storage model cho VM disk, shared folder và image archive.
+5. Thiết kế restore test chứng minh RPO/RTO, không chỉ xác nhận có file backup.

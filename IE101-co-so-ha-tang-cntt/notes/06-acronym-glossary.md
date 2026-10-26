@@ -1,6 +1,6 @@
-# 06 — Acronym Glossary
+# 06 — Acronym Glossary / Bảng viết tắt
 
-Use this as active recall: cover the right column, expand the acronym, then explain why it matters in a design.
+Ôn chủ động: che cột bên phải, tự nói đầy đủ acronym, rồi giải thích nó ảnh hưởng gì đến thiết kế/vận hành.
 
 | Acronym | Full form | One-line meaning |
 |---|---|---|
@@ -45,6 +45,6 @@ Use this as active recall: cover the right column, expand the acronym, then expl
 | VLAN | Virtual Local Area Network | Logical Layer-2 network segmentation. |
 | ZT / ZTA | Zero Trust / Zero Trust Architecture | Resource-focused access model without implicit trust from location alone. |
 
-## Acronym learning loop
+## Cách học acronym
 
-For every term, write: **full form → layer/category → job → one failure mode → one diagnostic/control**. Example: `DNS → application support service → name lookup → stale/wrong answer → inspect resolver answer and TTL`.
+Với mỗi thuật ngữ, ghi: **full form → layer/category → nhiệm vụ → một kiểu lỗi → một cách kiểm tra/control**. Ví dụ: `DNS → application support service → phân giải tên → answer cũ/sai → kiểm tra resolver answer và TTL`.

@@ -1,71 +1,69 @@
-# 01 — Computer Systems: Hardware, OS, and Performance
+# 01 — Computer Systems: Hardware, OS & Performance
 
-⭐ **Core idea:** infrastructure is a stack of constrained resources. An application feels slow when one or more resources or dependencies cannot meet its workload.
+> ⭐ **Ý chính:** hạ tầng là một stack tài nguyên có giới hạn. Hệ thống chậm khi một tài nguyên hoặc dependency không đáp ứng được workload.
 
-## 1. Infrastructure as a service stack
+## 1. Stack hạ tầng
 
 ```mermaid
 flowchart TB
   APP[Application / workload]
-  OS[Operating system: processes, memory, files, networking]
-  V[Optional hypervisor or container runtime]
-  HW[Compute: CPU · RAM · storage · NIC · power]
-  FAC[Facilities: rack · cooling · power · physical access]
+  OS[Operating system: process, memory, file, network]
+  V[Hypervisor hoặc container runtime]
+  HW[CPU · RAM · storage · NIC · power]
+  FAC[Data center: rack · cooling · power · physical security]
   APP --> OS --> V --> HW --> FAC
   NET[Network] <--> OS
   DATA[Persistent data / backup] <--> APP
 ```
 
-**Infrastructure** includes compute, network, storage, facilities, software platforms, identity, monitoring, backup, and the people/processes that operate them. The stack is a reasoning model; real deployments may combine layers or use managed services.
+**IT infrastructure** gồm compute, network, storage, facilities, software platform, identity, monitoring, backup và quy trình/con người vận hành. Stack này giúp tư duy; ngoài thực tế các lớp có thể được gộp hoặc dùng managed service.
 
-## 2. Hardware: what each resource does
+## 2. Hardware: từng tài nguyên làm gì?
 
-| Resource | Mental model | Useful signals | Typical symptom when constrained |
+| Thành phần | Hình dung | Chỉ số nên xem | Dấu hiệu nghẽn thường gặp |
 |---|---|---|---|
-| **CPU (Central Processing Unit)** | Executes instructions; cores run work in parallel, subject to dependencies and scheduling. | Utilization, run queue, per-core saturation, throttling. | Slow computation; one hot core can bottleneck an otherwise idle host. |
-| **RAM (Random Access Memory)** | Fast, volatile working space for active code and data. | Working set, available memory, page faults, swap/pagefile activity. | Repeated paging can cause severe latency; adding RAM only helps if memory pressure is causal. |
-| **Storage** | Persistent block, file, or object data. | Latency, IOPS, throughput, queue depth, capacity, errors. | Database stalls, slow boot, full filesystem, or failed writes. |
-| **NIC (Network Interface Card)** | Host’s wired/wireless network endpoint. | Link speed, drops/errors, utilization, retransmissions. | Packet loss, negotiated link downgrade, or saturated uplink. |
-| **GPU (Graphics Processing Unit)** | Parallel accelerator for supported workloads. | Utilization, memory, temperature, power. | Accelerator workload falls back to CPU or runs out of device memory. |
-| **PSU / UPS** | Power supply / Uninterruptible Power Supply. | Redundant feed status, battery health, runtime estimate. | Unexpected shutdown or unsafe storage writes during power loss. |
+| **CPU (Central Processing Unit)** | Thực thi instruction; nhiều core chạy song song nếu workload cho phép. | Utilization, run queue, per-core usage, throttling. | Tính toán chậm; một core đầy vẫn có thể nghẽn dù CPU tổng thể thấp. |
+| **RAM (Random Access Memory)** | Vùng làm việc nhanh, volatile cho code và dữ liệu đang dùng. | Working set, available memory, page fault, swap/pagefile. | Paging liên tục làm latency tăng; chỉ thêm RAM nếu có bằng chứng memory pressure. |
+| **Storage** | Lưu dữ liệu bền vững. | Latency, IOPS, throughput, queue depth, capacity, error. | Database chờ I/O, filesystem đầy, boot chậm hoặc write lỗi. |
+| **NIC (Network Interface Card)** | Điểm giao tiếp của host với mạng. | Link speed, drop/error, utilization, retransmission. | Packet loss, link thương lượng tốc độ thấp, uplink quá tải. |
+| **GPU (Graphics Processing Unit)** | Accelerator song song cho workload phù hợp. | Utilization, device memory, temperature, power. | Workload quay lại CPU hoặc hết bộ nhớ GPU. |
+| **PSU / UPS** | Power Supply Unit / Uninterruptible Power Supply. | Trạng thái nguồn dự phòng, battery health, runtime. | Tắt đột ngột hoặc dữ liệu ghi dở khi mất điện. |
 
-⭐ **Units:** 1 byte = 8 bits. Decimal **GB** = 10⁹ bytes; binary **GiB** = 2³⁰ bytes. A 100 Mbps link has a theoretical ceiling of 12.5 MB/s before protocol overhead. Always check whether a vendor means bits or bytes and decimal or binary units.
+⭐ **Đơn vị:** 1 byte = 8 bit. `GB` thập phân = 10⁹ byte; `GiB` nhị phân = 2³⁰ byte. Link 100 Mbps có trần lý thuyết 12.5 MB/s trước overhead. Luôn xem đang nói bit hay byte, GB hay GiB.
 
-## 3. Performance, capacity, and bottlenecks
+## 3. Performance, capacity và bottleneck
 
-- **Latency**: time for one operation or request. Lower is usually better; report a percentile such as p95, not just an average.
-- **Throughput**: completed work per unit time (requests/s, MB/s).
-- **IOPS (Input/Output Operations Per Second)**: storage operation rate; operation size matters.
-- **Concurrency**: work active at the same time. It is not the same as registered users.
-- **Utilization**: fraction of a resource in use. High utilization may be healthy or a saturation warning; interpret with latency, queueing, and errors.
-- **Queue depth**: work waiting for a resource. A rising queue with rising latency often signals saturation.
+- **Latency** = thời gian hoàn tất một thao tác/request; thấp thường tốt. Nên xem percentile như p95 thay vì chỉ average.
+- **Throughput** = lượng việc hoàn tất mỗi đơn vị thời gian (request/s, MB/s).
+- **IOPS (Input/Output Operations Per Second)** = số thao tác storage mỗi giây; cần xem kèm kích cỡ mỗi thao tác.
+- **Concurrency** = số việc đang xử lý đồng thời; khác với tổng số user đăng ký.
+- **Utilization** = phần trăm tài nguyên đang dùng. Phải xem cùng latency, queue và error để biết có bão hòa hay không.
+- **Queue depth** = số việc chờ tài nguyên. Queue và latency cùng tăng thường là dấu hiệu nghẽn.
 
-⚠️ **Do not optimize by one metric.** A service can have low average CPU and still be slow because of a single-thread bottleneck, disk wait, lock contention, DNS delay, or a downstream dependency.
+⚠️ Không kết luận từ một chỉ số. CPU trung bình thấp vẫn có thể có single-thread bottleneck, disk wait, lock contention, DNS delay hoặc dependency chậm.
 
-**Little’s Law** gives a useful steady-state relationship: `concurrency ≈ throughput × average latency` (units must match). At 200 requests/s and 0.25 s average time, expect roughly 50 in-flight requests. This is a planning estimate, not a safe capacity guarantee.
+**Little’s Law**: ở trạng thái ổn định, `concurrency ≈ throughput × average latency` (đổi đơn vị thời gian cho khớp). 200 request/s × 0.25 s ≈ 50 request đang chạy. Đây là ước lượng, không phải cam kết capacity.
 
 ### Scaling
 
-- **Scale up / vertical scaling**: give one host more CPU, RAM, or I/O capacity. Simple, but bounded by the host and may require downtime.
-- **Scale out / horizontal scaling**: add instances and distribute work. Requires health checks, load balancing, and usually stateless app instances or shared/partitioned state.
-- **Capacity headroom**: room for peaks, maintenance, failures, and growth. Size from observed workload plus an explicit safety margin; document assumptions.
+- **Scale up / vertical scaling:** tăng CPU/RAM/I/O của một host. Dễ vận hành nhưng có giới hạn phần cứng và đôi khi cần downtime.
+- **Scale out / horizontal scaling:** thêm instance rồi phân tải. Thường cần load balancer, health check và xử lý state (stateless app hoặc shared/partitioned state).
+- **Capacity headroom:** phần dư cho peak, bảo trì, sự cố và tăng trưởng. Ghi lại giả định thay vì chọn con số dự phòng tùy ý.
 
-## 4. OS (Operating System) essentials
+## 4. OS (Operating System)
 
-The OS manages CPU scheduling, virtual memory, filesystems, devices, networking, identity, and isolation. Applications use **system calls** to request privileged operations from the kernel.
+OS quản lý CPU scheduling, virtual memory, filesystem, thiết bị, network, identity và isolation. App dùng **system call** để yêu cầu kernel thực hiện thao tác đặc quyền.
 
-| Term | Meaning |
+| Thuật ngữ | Nghĩa ngắn |
 |---|---|
-| **Kernel** | Privileged core that manages hardware and OS abstractions. |
-| **Process** | Running program with its own virtual address space and resources. |
-| **Thread** | Execution path within a process; threads usually share process memory. |
-| **Service / daemon** | Background process providing a function; service managers start, stop, and monitor it. |
-| **File descriptor / handle** | OS reference to an open file, socket, pipe, or other resource. |
-| **Filesystem** | Rules and structures for naming, storing, and retrieving files. |
-| **Permission / ACL (Access Control List)** | Rules that determine which identity may perform which action. |
-| **Patch** | Tested software update that may fix security or reliability issues; validate compatibility and rollback. |
-
-### Boot-to-service path
+| **Kernel** | Phần đặc quyền quản lý hardware và abstraction của OS. |
+| **Process** | Chương trình đang chạy, có virtual address space và tài nguyên riêng. |
+| **Thread** | Luồng thực thi bên trong process; các thread thường chia sẻ memory của process. |
+| **Service / daemon** | Process nền cung cấp chức năng; service manager quản lý start/stop/health. |
+| **File descriptor / handle** | Tham chiếu OS tới file, socket, pipe hoặc resource đang mở. |
+| **Filesystem** | Cách đặt tên, lưu trữ và truy xuất file. |
+| **Permission / ACL** | Quy tắc identity nào được phép làm action nào. |
+| **Patch** | Bản cập nhật có thể sửa security/reliability; cần kiểm tra tương thích và rollback. |
 
 ```mermaid
 sequenceDiagram
@@ -74,29 +72,29 @@ sequenceDiagram
   participant K as Kernel
   participant I as Init / service manager
   participant S as Service
-  P->>B: Select boot device
-  B->>K: Load kernel and initramfs
-  K->>K: Discover devices, mount root filesystem
-  K->>I: Start first user-space process
-  I->>S: Start dependencies and service
-  S-->>I: Ready / failed with exit status
+  P->>B: Chọn thiết bị boot
+  B->>K: Nạp kernel và initramfs
+  K->>K: Nhận thiết bị, mount root filesystem
+  K->>I: Khởi chạy user space
+  I->>S: Khởi động service và dependencies
+  S-->>I: Ready hoặc failed + exit status
 ```
 
-## 5. Practical troubleshooting method
+## 5. Thực hành troubleshooting
 
-1. **Define impact:** who is affected, since when, and what changed?
-2. **Scope the layer:** one process, host, subnet, site, or external dependency?
-3. **Collect evidence before changing state:** service status, logs, CPU/memory/disk, network reachability, recent deployment/config changes.
-4. **Form one hypothesis at a time:** state what observation would confirm or reject it.
-5. **Mitigate safely:** preserve data; note the change and rollback; avoid rebooting everything as a first step.
-6. **Verify user-visible behavior** and document cause, fix, and prevention.
+1. **Định nghĩa impact:** ai bị ảnh hưởng, từ khi nào, có thay đổi gì?
+2. **Khoanh vùng layer:** một process, host, subnet, site hay external dependency?
+3. **Thu thập evidence trước khi đổi trạng thái:** service status, logs, CPU/RAM/disk, connectivity, lần deploy/config gần nhất.
+4. **Mỗi lần kiểm tra một hypothesis:** nói rõ quan sát nào xác nhận hoặc bác bỏ giả thuyết.
+5. **Mitigate an toàn:** giữ dữ liệu, ghi lại thay đổi và rollback; đừng reboot mọi thứ như bước đầu tiên.
+6. **Xác minh từ góc nhìn user**, rồi ghi nguyên nhân, cách sửa và phòng ngừa.
 
-🧪 **Safe observation commands** (read-only): Windows `Get-Process`, `Get-Service`, `Get-Volume`, `ipconfig /all`, `Get-NetIPConfiguration`; Linux `ps aux`, `systemctl status <service>`, `df -h`, `free -h`, `ip address`, `ip route`. A status command can expose sensitive process arguments or paths—do not paste secrets into public notes.
+🧪 Lệnh quan sát read-only: Windows `Get-Process`, `Get-Service`, `Get-Volume`, `ipconfig /all`, `Get-NetIPConfiguration`; Linux `ps aux`, `systemctl status <service>`, `df -h`, `free -h`, `ip address`, `ip route`. Output có thể lộ username, path hoặc secret; đừng đưa nguyên log lên repo công khai.
 
-## Retrieval questions
+## Câu hỏi tự nhớ
 
-1. Why can 20% total CPU utilization coexist with a CPU bottleneck?
-2. When do you inspect IOPS versus throughput?
-3. What evidence distinguishes memory pressure from a CPU-bound workload?
-4. Why is “restart the server” a weak first diagnostic step?
-5. Explain one trade-off between scale up and scale out.
+1. Vì sao CPU tổng thể 20% nhưng vẫn có thể nghẽn CPU?
+2. Khi nào xem IOPS, khi nào xem throughput?
+3. Dữ liệu nào giúp phân biệt memory pressure với CPU-bound workload?
+4. Vì sao “restart server” là bước chẩn đoán đầu tiên chưa tốt?
+5. Nêu một trade-off giữa scale up và scale out.

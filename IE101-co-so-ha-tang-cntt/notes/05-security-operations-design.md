@@ -1,22 +1,22 @@
-# 05 — Security, Operations, and Infrastructure Design
+# 05 — Security, Operations & Infrastructure Design
 
-⭐ **Core idea:** design for expected failure. Reduce the chance and impact of compromise, make failures observable, and prove that recovery meets the service objective.
+> ⭐ **Ý chính:** thiết kế để hệ thống chịu được lỗi. Giảm nguy cơ/tác động của sự cố, quan sát được vấn đề và chứng minh việc phục hồi đáp ứng mục tiêu.
 
-## 1. Security foundations
+## 1. Nền tảng security
 
-- **CIA triad:** Confidentiality (only authorized disclosure), Integrity (correctness/unauthorized change protection), Availability (accessible when required).
-- **Least privilege:** give each identity only the actions/resources needed, for only as long as needed.
-- **MFA (Multi-Factor Authentication):** combine independent factor types; two passwords are not two factors.
-- **RBAC (Role-Based Access Control):** assign permissions to roles, then users/service identities to roles.
-- **ACL (Access Control List):** explicit subject/action/resource rules.
-- **Encryption at rest / in transit:** protect stored data / data moving across a channel. Manage keys and certificates; encryption does not prevent authorized endpoint misuse.
-- **Secret:** credential, API key, token, or private key. Keep it out of source control, logs, screenshots, and shared docs; use a secret manager and rotation process.
-- **Patch and vulnerability management:** inventory → prioritize by exposure/impact → test → deploy → verify → track exceptions.
-- **Segmentation:** restrict communication paths to contain compromise; do not rely on “internal network” as trust proof.
+- **CIA triad:** Confidentiality (chỉ người được phép xem), Integrity (bảo vệ tính đúng và chống thay đổi trái phép), Availability (dùng được khi cần).
+- **Least privilege:** chỉ cấp identity đúng quyền, đúng resource, đúng thời gian cần.
+- **MFA (Multi-Factor Authentication):** kết hợp các loại yếu tố độc lập; hai mật khẩu vẫn chỉ là cùng một loại factor.
+- **RBAC (Role-Based Access Control):** gán quyền cho role, rồi gán user/service identity vào role.
+- **ACL (Access Control List):** rule chỉ rõ subject/action/resource nào được cho phép hoặc từ chối.
+- **Encryption at rest / in transit:** bảo vệ data lưu trữ / data đang truyền. Phải quản lý key; encryption không ngăn endpoint được cấp quyền lạm dụng dữ liệu.
+- **Secret:** password, API key, token, private key. Không commit vào source, logs, ảnh chụp hay tài liệu chia sẻ; dùng secret manager và có quy trình rotation.
+- **Patch/vulnerability management:** inventory → ưu tiên theo exposure/impact → test → deploy → verify → theo dõi ngoại lệ.
+- **Segmentation:** giới hạn đường đi để khoanh vùng sự cố; đừng coi “internal network” là bằng chứng đáng tin.
 
-### Zero Trust (ZT) as a design principle
+### Zero Trust như một nguyên tắc thiết kế
 
-**Zero Trust Architecture (ZTA)** removes implicit trust based solely on network location or ownership. Authenticate/authorize subject and device for access to a resource; evaluate context and limit access. It is not a product switch or a requirement to distrust every packet equally.
+**Zero Trust Architecture (ZTA)** bỏ mặc định tin cậy chỉ vì thiết bị ở trong mạng nội bộ hoặc thuộc sở hữu tổ chức. Xác thực/ủy quyền user và device trước khi truy cập resource; đánh giá context và giới hạn phạm vi truy cập. Đây là cách thiết kế, không phải một sản phẩm bật lên là xong.
 
 ```mermaid
 flowchart LR
@@ -28,36 +28,36 @@ flowchart LR
   R --> L[Logs + telemetry]
 ```
 
-## 2. Threat modeling and secure architecture
+Nguồn chuẩn: [NIST SP 800-207 — Zero Trust Architecture](https://csrc.nist.gov/pubs/sp/800/207/final).
 
-Use a simple repeatable pass:
+## 2. Threat modeling và secure architecture
 
-1. **Assets:** identities, endpoints, network, application, data, backups, management plane.
+1. **Assets:** identity, endpoint, network, app, data, backup, management plane.
 2. **Trust boundaries:** public/private edge, user/admin, app/database, tenant/account, production/backup.
-3. **Threats:** unauthorized access, data exposure, tampering, denial of service, credential theft, lateral movement, accidental deletion.
-4. **Controls:** prevent, detect, respond, recover. Map each threat to a control and owner.
-5. **Residual risk:** record what remains and how it will be accepted/monitored.
+3. **Threats:** truy cập trái phép, lộ dữ liệu, sửa dữ liệu, denial of service, đánh cắp credential, lateral movement, xóa nhầm.
+4. **Controls:** prevent, detect, respond, recover. Gắn từng threat với control và người chịu trách nhiệm.
+5. **Residual risk:** ghi phần rủi ro còn lại, owner và cách theo dõi/chấp nhận.
 
-⚠️ Avoid security theater: a firewall rule is not useful if a public admin interface remains reachable through another path; MFA is weakened by shared accounts; a backup is vulnerable if attackers can delete it with production credentials.
+⚠️ Tránh security theater: firewall rule không giúp nếu admin interface còn public qua đường khác; MFA mất ý nghĩa khi dùng chung account; backup có thể bị xóa nếu attacker dùng được credential production.
 
-## 3. Observe and operate
+## 3. Observability: metrics, logs, traces
 
-| Signal | What it answers | Example |
+| Tín hiệu | Trả lời câu hỏi | Ví dụ |
 |---|---|---|
-| **Metrics** | How much / how often / how long? | Request rate, p95 latency, error ratio, disk free. |
-| **Logs** | What event happened, with context? | Auth denied, service restart, deployment ID. |
-| **Traces** | Where did one request spend time across services? | Gateway 20 ms, app 80 ms, DB 900 ms. |
-| **Events** | What changed in the environment? | Config rollout, node replacement, certificate renewal. |
+| **Metrics** | Bao nhiêu / thường xuyên thế nào / mất bao lâu? | Request rate, p95 latency, error ratio, disk free. |
+| **Logs** | Sự kiện nào xảy ra, kèm ngữ cảnh gì? | Auth denied, service restart, deployment ID. |
+| **Traces** | Một request tốn thời gian ở service nào? | Gateway 20 ms, app 80 ms, DB 900 ms. |
+| **Events** | Hệ thống vừa thay đổi gì? | Config rollout, node replacement, certificate renewal. |
 
-**SLO (Service Level Objective)** is a target for a service indicator over a window; **SLI (Service Level Indicator)** is the measured indicator; **SLA (Service Level Agreement)** is an external commitment/contract. Define the user-visible measurement and exclusions precisely.
+- **SLI (Service Level Indicator):** chỉ số đo dịch vụ.
+- **SLO (Service Level Objective):** mục tiêu cho SLI trong một khoảng thời gian.
+- **SLA (Service Level Agreement):** cam kết/thỏa thuận dịch vụ với bên ngoài.
 
-**p95 latency**: 95% of observations are at or below this value (5% are higher). Average latency can hide painful tail delays. Alert on symptoms and actionable causes, not every noisy metric. Protect logs from secrets and excessive personal data.
+**p95 latency** là ngưỡng mà 95% kết quả đo bằng hoặc thấp hơn; 5% còn lại chậm hơn. Average có thể che tail latency gây khó chịu cho user. Alert nên dựa trên triệu chứng và nguyên nhân có thể xử lý, không phải mọi metric ồn. Không ghi secret hoặc quá nhiều thông tin cá nhân vào log.
 
-Availability is often approximated as `uptime / (uptime + downtime)` over a stated window. For 30 days, 99.9% allows about 43.2 minutes of downtime. A chain of two independent 99.9%-available serial components is approximately 99.8001%; independence is a strong assumption and shared dependencies can worsen it.
+Availability thường ước lượng: `uptime / (uptime + downtime)` trong một cửa sổ xác định. 30 ngày với 99.9% tương đương khoảng 43.2 phút downtime. Hai dependency nối tiếp, mỗi cái 99.9% và độc lập, cho tổng khoảng 99.8001%; giả định độc lập thường không hoàn toàn đúng vì có shared dependency.
 
-## 4. Incident response and change safety
-
-### Incident runbook
+## 4. Incident response và thay đổi an toàn
 
 ```mermaid
 flowchart LR
@@ -68,37 +68,39 @@ flowchart LR
   R --> L[Learn: cause, gaps, actions]
 ```
 
-For a suspected web outage, check from outside inward: DNS answer → route/reachability → TCP port → TLS/certificate → HTTP status → proxy/app health → database/dependency → recent changes. Preserve relevant logs and timestamps. Mitigation can precede root-cause proof when impact is high, but record what changed.
+### Runbook khi web lỗi
+
+Kiểm tra từ ngoài vào trong: DNS answer → route/connectivity → TCP port → TLS/certificate → HTTP status → proxy/app health → database/dependency → thay đổi mới nhất. Giữ log và timestamp liên quan. Nếu impact cao, mitigation có thể đi trước khi biết root cause, nhưng phải ghi lại đã thay đổi gì.
 
 ### Change record checklist
 
-- Goal, scope, owner, and user impact
-- Preconditions and backup/snapshot where appropriate
-- Exact steps and expected observations
-- Validation including user-visible check
-- Rollback trigger and tested rollback path
-- Monitoring window and communication
+- Mục tiêu, phạm vi, owner, ảnh hưởng user
+- Điều kiện trước khi làm; backup/snapshot nếu phù hợp
+- Các bước và kết quả dự kiến
+- Validation, gồm kiểm tra từ góc nhìn user
+- Rollback trigger và đường rollback đã thử
+- Thời gian monitor sau thay đổi và thông báo liên quan
 
-## 5. Capacity and infrastructure design
+## 5. Capacity planning và thiết kế hạ tầng
 
-Start with requirements, not a brand/model:
+Bắt đầu từ yêu cầu, không bắt đầu bằng model thiết bị:
 
-| Requirement | Questions |
+| Yêu cầu | Câu hỏi cần trả lời |
 |---|---|
-| Users/workload | Peak concurrent users? Request size/rate? Batch windows? Growth? |
-| Performance | Target p95 latency and throughput? Which dependency dominates? |
-| Availability | Required service hours? Failure domains? Maintenance tolerance? |
-| Data | Sensitivity, retention, integrity, growth, RPO, RTO? |
-| Operations | Who patches, monitors, restores, and approves changes? |
-| Cost | Capital/cloud, licenses, egress, backup, support, staff, power/cooling? |
+| Users/workload | Peak concurrent users? Request rate/size? Batch window? Growth? |
+| Performance | p95 latency và throughput mục tiêu? Dependency nào chậm nhất? |
+| Availability | Cần phục vụ giờ nào? Failure domain nào? Chấp nhận bảo trì bao lâu? |
+| Data | Mức nhạy cảm, retention, integrity, growth, RPO, RTO? |
+| Operations | Ai patch, monitor, restore và phê duyệt thay đổi? |
+| Cost | Thiết bị/cloud, license, egress, backup, support, nhân sự, điện/làm mát? |
 
-**Back-of-the-envelope examples:**
+Ước lượng ban đầu:
 
-- Storage required ≈ active data + indexes/metadata + logs + retained backups + growth + free-space headroom. Avoid assuming compression/deduplication until measured.
-- Network throughput ≈ concurrent active clients × average per-client rate, then account for bursts, protocol overhead, and shared links.
-- CPU needs depend on per-request work and parallelism; benchmark representative workload rather than translating user count directly into vCPU.
+- `Storage ≈ active data + index/metadata + logs + backup retention + growth + free-space headroom`. Chưa đo thì không tự giả định compression/dedup.
+- `Network throughput ≈ concurrent active clients × average rate per client`; cộng burst, protocol overhead và link dùng chung.
+- CPU phụ thuộc work trên mỗi request và khả năng song song; benchmark workload đại diện, đừng đổi số user trực tiếp thành số vCPU.
 
-### Example: small teaching lab
+### Ví dụ: phòng lab học tập
 
 ```mermaid
 flowchart LR
@@ -111,12 +113,12 @@ flowchart LR
   SV --> BK[Separate backup target]
 ```
 
-Write explicit policy, e.g. guest → Internet only; students → approved lab services; admin → management interfaces; service → backup target on required ports only. Deny by default where practical, then permit and test necessary flows. The exact design depends on assignment requirements and threat model.
+Ví dụ policy: guest → Internet; student → dịch vụ lab được duyệt; admin → management interface; service → backup target ở đúng port cần thiết. Mặc định deny khi phù hợp, sau đó permit luồng cần và test. Thiết kế thật phụ thuộc requirement và threat model.
 
-## 6. Retrieval and design exercise
+## Bài tập tự nhớ / thiết kế
 
-1. For a student portal, list assets, trust boundaries, one threat per boundary, and a control.
-2. The site is “up” but p95 latency and error ratio rise. Which signals and dependencies do you inspect?
-3. Propose an RPO/RTO, then list the steps and evidence needed to prove each.
-4. Draw a VLAN policy for student, guest, server, and admin networks; list allowed flows.
-5. Identify a single point of failure in your drawing and propose a proportionate mitigation.
+1. Với student portal, liệt kê assets, trust boundary, một threat mỗi boundary và control.
+2. Website vẫn “up” nhưng p95 latency và error ratio tăng: xem signal/dependency nào?
+3. Đề xuất RPO/RTO rồi nêu các bước và evidence chứng minh đạt.
+4. Vẽ policy VLAN cho student, guest, server, admin; ghi rõ luồng được phép.
+5. Tìm single point of failure trong sơ đồ và đề xuất cách giảm rủi ro phù hợp chi phí.

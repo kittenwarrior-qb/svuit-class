@@ -1,8 +1,8 @@
-# 02 — Networking: From Ethernet to the Internet
+# 02 — Networking: Ethernet đến Internet
 
-⭐ **Core idea:** follow the packet one hop at a time. A host decides whether the destination is local; if remote, it sends the frame to its default gateway, which routes the IP packet onward.
+> ⭐ **Ý chính:** lần theo packet từng hop một. Host tự xác định đích cùng subnet hay khác subnet; nếu khác, nó gửi frame tới **default gateway**.
 
-## 1. Encapsulation and the request path
+## 1. Encapsulation và đường đi dữ liệu
 
 ```mermaid
 flowchart LR
@@ -12,81 +12,77 @@ flowchart LR
   L --> M[Physical medium<br/>copper / fiber / radio]
 ```
 
-| Layer model | Examples | Main job |
+| Layer để dễ học | Ví dụ | Nhiệm vụ |
 |---|---|---|
-| Application | HTTP(S), DNS, SSH, DHCP | App-level message and semantics. |
-| Transport | TCP, UDP | Process-to-process communication using ports. |
-| Internet | IPv4, IPv6, ICMP | Addressing and routing between networks. |
-| Link | Ethernet, Wi-Fi | Delivery on one local link using link-layer addresses. |
+| Application | HTTP(S), DNS, SSH, DHCP | Ý nghĩa request/response ở cấp ứng dụng. |
+| Transport | TCP, UDP | Giao tiếp giữa các process thông qua port. |
+| Internet | IPv4, IPv6, ICMP | Địa chỉ và định tuyến packet qua nhiều mạng. |
+| Link | Ethernet, Wi-Fi | Giao packet trên một local link bằng địa chỉ lớp liên kết. |
 
-Models such as OSI are learning aids; protocols do not always fit cleanly into a single box.
+OSI là mô hình học tập; một số giao thức thực tế không khớp hoàn toàn vào đúng một ô.
 
-## 2. Switching, routing, and addressing
+## 2. Switching, routing và địa chỉ
 
-- **MAC (Media Access Control) address** identifies a link-layer interface on the local network; switches learn which MAC addresses are reachable on which ports.
-- **IP (Internet Protocol) address** identifies an interface in an IP network; routers forward packets between networks using routing tables.
-- **Switch** forwards Ethernet frames in a LAN. **Router** forwards IP packets between networks.
-- **Default gateway** is the next-hop router a host uses for destinations outside its local subnet.
-- **ARP (Address Resolution Protocol)** resolves a local IPv4 next-hop IP to a MAC address. IPv6 uses Neighbor Discovery rather than ARP.
-- **VLAN (Virtual LAN)** separates Layer-2 broadcast domains logically. VLANs alone do not enforce secure communication; routing policy/firewall rules must control inter-VLAN traffic.
-- **NAT (Network Address Translation)** rewrites address/port information, often to share public IPv4. NAT is not a substitute for firewall policy or authentication.
-
-### Local vs remote destination
+- **MAC (Media Access Control) address** nhận diện interface ở link layer; switch học MAC nào nằm sau port nào.
+- **IP (Internet Protocol) address** xác định interface thuộc mạng IP nào; router chuyển packet giữa các mạng theo routing table.
+- **Switch** chuyển Ethernet frame trong LAN. **Router** chuyển IP packet giữa các mạng.
+- **Default gateway** là router next-hop mà host dùng khi đích nằm ngoài subnet local.
+- **ARP (Address Resolution Protocol)** tìm MAC của next-hop IPv4 trong cùng link. IPv6 dùng Neighbor Discovery, không dùng ARP.
+- **VLAN (Virtual LAN)** tách broadcast domain ở Layer 2. VLAN tự nó không bảo vệ traffic; cần routing policy/ACL/firewall cho liên lạc giữa VLAN.
+- **NAT (Network Address Translation)** đổi địa chỉ/cổng, thường để chia sẻ IPv4 public. NAT không thay firewall hay authentication.
 
 ```mermaid
 flowchart TD
-  H[Host creates packet for destination IP] --> C{Destination in local prefix?}
-  C -- Yes --> D[Resolve destination MAC]
-  C -- No --> G[Resolve default-gateway MAC]
-  D --> F[Build local Ethernet frame]
+  H[Host tạo packet đến destination IP] --> C{Đích nằm trong local prefix?}
+  C -- Có --> D[Tìm MAC của destination]
+  C -- Không --> G[Tìm MAC của default gateway]
+  D --> F[Tạo Ethernet frame]
   G --> F
-  F --> S[Switch forwards by destination MAC]
-  S --> R{Router receives frame?}
-  R -- Yes --> RT[Route by destination IP; build a new link frame]
-  R -- No --> L[Local destination receives frame]
+  F --> S[Switch chuyển frame theo MAC]
+  S --> R{Router nhận frame?}
+  R -- Có --> RT[Route theo destination IP, tạo frame mới]
+  R -- Không --> L[Host local nhận frame]
   RT --> N[Next routed hop]
 ```
 
-The **IP source/destination** usually remain end-to-end across routed hops, subject to NAT; the **link-layer addresses** change at each link.
+Khi đi qua router, **IP source/destination** thường được giữ nguyên đầu-cuối trừ khi có NAT; **MAC address** thay đổi theo từng link.
 
 ## 3. IPv4 subnetting (CIDR)
 
-**CIDR (Classless Inter-Domain Routing)** writes a prefix such as `/26`; the prefix length is the number of network bits in a 32-bit IPv4 address.
+**CIDR (Classless Inter-Domain Routing)** viết prefix như `/26`; số prefix là số bit dành cho network trong địa chỉ IPv4 32-bit.
 
-For ordinary subnets from `/0` to `/30`:
+Với subnet thông thường `/0` đến `/30`:
 
-- total addresses = `2^(32 − prefix)`
-- commonly usable host addresses = total − 2 (network and broadcast)
-- `/31` is commonly used on point-to-point links; `/32` denotes one address. Do not blindly subtract two for these cases.
+- Tổng địa chỉ = `2^(32 − prefix)`
+- Host thường dùng = tổng − 2 (network và broadcast)
+- `/31` thường dùng cho point-to-point; `/32` là một địa chỉ đơn. Không áp dụng máy móc phép trừ 2 cho hai trường hợp này.
 
-### Example: `192.168.10.70/26`
+### Ví dụ `192.168.10.70/26`
 
-1. `/26` mask = `255.255.255.192`; last-octet block size = `256 − 192 = 64`.
-2. Blocks start `.0`, `.64`, `.128`, `.192`; `.70` falls in `.64–.127`.
-3. Network `.64`, broadcast `.127`, usable range `.65–.126` (62 hosts).
-4. A gateway can be any suitable host address reserved by the network plan; it is not required to be the first usable address.
+1. `/26` mask = `255.255.255.192`; block size ở octet cuối = `256 − 192 = 64`.
+2. Các block bắt đầu `.0`, `.64`, `.128`, `.192`; `.70` nằm trong `.64–.127`.
+3. Network `.64`, broadcast `.127`, host `.65–.126` (62 host).
+4. Gateway là host được dành riêng theo thiết kế, **không bắt buộc** phải là host đầu.
 
-### Fast subnet workflow
+**Quy trình tính nhanh:** `prefix → mask → block size → block chứa IP → network → broadcast → host range → kiểm tra capacity`.
 
-`prefix → mask → block size → containing block → network → broadcast → usable range → capacity check`
+Nếu cần `H` host, tìm `h` nhỏ nhất sao cho `2^h − 2 ≥ H`; prefix = `32 − h` (với LAN IPv4 thông thường). Nhớ tính cả gateway, printer, AP, server, thiết bị dự phòng và tăng trưởng.
 
-For a required host count `H`, choose the smallest `h` such that `2^h − 2 ≥ H`; prefix is `32 − h` (for ordinary IPv4 LANs). Include gateways, printers, APs, servers, growth, and reserved addresses in the requirement.
+## 4. IPv6, private IP và port
 
-## 4. IPv6, private addressing, and ports
+- **IPv6** có 128 bit, không có broadcast; multicast và Neighbor Discovery đảm nhận các chức năng tương ứng. `/64` phổ biến cho LAN nhưng thiết kế prefix còn tùy môi trường.
+- Private IPv4 theo RFC 1918: `10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`. Private không đồng nghĩa trusted.
+- **Port** xác định endpoint ở transport layer. Mặc định thường gặp: SSH 22, DNS 53, HTTP 80, HTTPS 443; dịch vụ có thể cấu hình port khác.
+- **ICMP (Internet Control Message Protocol)** dùng cho chẩn đoán/lỗi. Ping dùng ICMP Echo; ping bị chặn không chứng minh service đã chết.
 
-- **IPv6** has 128-bit addresses and no broadcast; multicast and Neighbor Discovery serve related functions. `/64` is common for a LAN subnet, though allocation design depends on the environment.
-- RFC 1918 private IPv4 ranges: `10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`. Private does not mean trusted.
-- A **port** identifies a transport-layer endpoint. Common defaults: SSH 22, DNS 53, HTTP 80, HTTPS 443. Ports are conventions and may be changed.
-- **ICMP (Internet Control Message Protocol)** carries diagnostics/errors; ping uses ICMP Echo. A blocked ping does not prove the service is down.
+## 5. TCP, UDP, MTU và packet loss
 
-## 5. TCP, UDP, MTU, and loss
+- **TCP (Transmission Control Protocol)** cung cấp byte stream đúng thứ tự, có retransmission và congestion control; TCP không giữ ranh giới message của ứng dụng.
+- **UDP (User Datagram Protocol)** gửi datagram, không tự đảm bảo giao nhận/thứ tự; ứng dụng có thể tự xây reliability.
+- **MTU (Maximum Transmission Unit)** là payload tối đa của một link mà không cần fragmentation ở link đó. Path MTU sai có thể tạo lỗi “request nhỏ chạy, tải lớn bị treo”.
+- **Packet loss** khiến một số protocol phải gửi lại và làm throughput giảm; latency/loss có thể quan trọng hơn tốc độ link ghi trên hộp.
 
-- **TCP (Transmission Control Protocol)** provides an ordered byte stream with retransmission and congestion control. It does not preserve application message boundaries.
-- **UDP (User Datagram Protocol)** provides datagrams without built-in delivery/order guarantees; applications may add their own reliability.
-- **MTU (Maximum Transmission Unit)** is the largest link-layer payload a link carries without fragmentation at that layer. Mismatched path MTU can create “small requests work, large transfer stalls” symptoms.
-- **Packet loss** triggers retries for some protocols and can sharply reduce throughput; latency and loss often matter more than raw link rate.
-
-## 6. Diagnostic sequence
+## 6. Troubleshooting theo thứ tự
 
 ```mermaid
 flowchart LR
@@ -98,14 +94,14 @@ flowchart LR
   T --> H[HTTP response]
 ```
 
-🧪 Check in order: address/mask/gateway → local link → route → DNS resolution → TCP port reachability → TLS validation → HTTP status/application logs. Use `ipconfig /all`, `route print`, `nslookup example.com`, `Test-NetConnection host -Port 443` (Windows), or `ip address`, `ip route`, `getent hosts example.com`, `curl -Iv https://example.com` (Linux/macOS). These commands contact the named host; use only systems you are authorized to test.
+🧪 Kiểm tra: IP/mask/gateway → local link → route → DNS → TCP port → TLS → HTTP status/app log. Windows: `ipconfig /all`, `route print`, `nslookup example.com`, `Test-NetConnection host -Port 443`. Linux/macOS: `ip address`, `ip route`, `getent hosts example.com`, `curl -Iv https://example.com`. Lệnh cuối có kết nối tới host chỉ định; chỉ kiểm tra hệ thống bạn được phép truy cập.
 
-⚠️ A successful ping proves only that an ICMP Echo round trip succeeded at that time. It does not prove DNS, TCP/443, TLS, application health, or data correctness.
+⚠️ Ping thành công chỉ xác nhận ICMP Echo round trip ở thời điểm đó; không xác nhận DNS, TCP/443, TLS, application health hay tính đúng đắn dữ liệu.
 
-## Retrieval questions
+## Câu hỏi tự nhớ
 
-1. Which addresses change at a router hop: MAC, IP, or both? What does NAT change?
-2. Determine network/broadcast/host range for `10.0.4.77/28`.
-3. Why is “VLAN = secure” an incomplete claim?
-4. Why can a host reach its gateway but fail to resolve a domain name?
-5. What symptoms might an MTU problem create?
+1. Qua router, MAC/IP thay đổi thế nào? NAT thay đổi gì?
+2. Tính network/broadcast/host range của `10.0.4.77/28`.
+3. Vì sao nói “đã có VLAN là an toàn” chưa đúng?
+4. Vì sao ping được gateway mà vẫn không phân giải được domain?
+5. MTU problem có thể biểu hiện ra sao?
