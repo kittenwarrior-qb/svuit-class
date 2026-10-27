@@ -13,8 +13,6 @@ CTĐT Khóa 19 ghi thời gian thiết kế **2 năm / 4 học kỳ chính**. �
 
 ### HP1 · HK1 năm học 2026–2027 — 15 TC
 
-Các môn này khớp với 5 môn trong ảnh TKB bạn gửi.
-
 - [ ] IE005 — Giới thiệu ngành CNTT · **1 TC**
 - [ ] IE101 — Cơ sở hạ tầng CNTT · **3 TC**
 - [ ] IE103 — Quản lý thông tin · **4 TC**
